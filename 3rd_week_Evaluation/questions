@@ -1,0 +1,158 @@
+The Ashes! (But One day)
+Description
+
+You are given two numbers where first number is score of Australian team and second number is score of England.
+
+Comment who wins the match.
+
+If match ends in a tie, print "Tie" (without quotes), else print the name of Winner
+
+
+Input
+Input Format :
+
+First and the only line contains 2 space separated integers denoting scores of Australia and England respectively.
+
+
+
+Constraints :
+
+Both score <450
+
+
+Output
+Output one string(either Australia or England) which is the name of Winning team
+
+
+Sample Input 1 
+
+46 67
+Sample Output 1
+
+England
+
+
+
+
+
+
+
+
+
+
+
+Profile Pic
+Description
+
+Haren wants to change his profile picture on Facebook. Now Facebook has some restriction over the dimension of picture that we can upload.
+
+Length of every picture uploaded should be greater than L and width should be greater than W
+
+If his picture passes both the criteria, print "Upload"
+
+In case it could not pass becuase of length, print "Increase Length"
+
+In all other cases, print "Increase Width"
+
+
+Input
+Input Format:
+
+First line contains 2 space separated integers which are L and W
+
+Second line contains length and width of uploaded pic
+
+Constraints:
+
+L,H<100
+
+
+Output
+Output one of the strings based on condition met
+
+
+Sample Input 1 
+
+12 14
+8 19
+Sample Output 1
+
+Increase Length
+
+
+
+
+
+
+
+
+
+Apply Brakes
+Description
+
+You are given the distance travelled by car(in kilometres) in a certain time (in hours). If the speed of that car is greater than 40 km/hr, you have to print "Apply Brake" (without quotes), else in all other conditions, print "Keep Going" (without quotes)
+
+
+Input
+Input Format
+
+First line contains 2 space separated integers where the first integer represents the distance travelled by car and second represents time taken to cover that distance.
+
+Constraints
+
+Distance < 1000
+
+time taken < 5
+
+
+Output
+Output a string depending on the speed of the car
+
+
+Sample Input 1 
+
+100 2
+Sample Output 1
+
+Apply Brake
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Enough Fuel Consumption
+Description
+
+You are given the amount of fuel consumed by a car travelling 1 km. You are also provided total distance the car will be travelling. If the total amount of fuel required by car is greater than 50 litres, print "Enough" (without quotes), else print "Go On" (without quotes).
+
+
+Input
+Input Format
+
+The input has one line which contains a number which is the amount of fuel required by the car in travelling 1 km space separated by the total distance the car has to cover.
+
+Constraints
+
+Both numbers < 1000
+
+
+Output
+Output one string based on the conditions mentioned above.
+
+
+Sample Input 1 
+
+1 46
+Sample Output 1
+
+Go On

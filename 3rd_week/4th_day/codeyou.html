@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <title>Code You</title>
+  <style type="text/css">
+    #container{
+      width: 1000px;
+      margin: auto;
+    }
+    #up-container{
+      background-color: #F8F9FF;
+      padding: 20px 0;
+    }
+    .block{
+      width: 250px;
+      height: 70px;
+      padding: 10px;
+      padding-bottom: 20px;
+      float: left;
+      margin: 25px;
+      border-radius: 20px;
+      color: white;
+    }
+    .block:nth-child(1){
+      background-color: orange;
+    }
+    .block:nth-child(2){
+      background-color:blue;
+    }
+    .block:nth-child(3){
+      background-color: skyblue;
+    }
+    .block > img{
+      height: 60px;
+      float: left;
+      padding: 10px;
+    }
+
+    #popular-program{
+      text-align: center;
+      margin-top: 200px;
+      width: 490px;
+      height: 130px;
+      margin: auto;
+    }
+    #popular-program > div{
+      background-color: #F8F9FF;
+      
+    }
+    
+    #popular-program > div > p {
+      float: left;
+      margin:0px 10px;
+      font-size: 16px;
+      padding: 10px;  
+    }
+    #popular-program > div > p:first-child {
+     background-color: skyblue;
+    }
+    .clear{
+      clear: both;
+    }
+
+    #lower-div > div{
+      float: left;
+      width: 280px;
+      margin: 25px;
+      background-color: #F8F9FF;
+    }
+    #lower-div > div > img {
+      width: 280px;
+    }
+    #lower-div > div > h5, h3, p, button {
+      margin: 10px 20px;
+    }
+    #lower-div > div > button{
+      padding: 10px;
+      color: skyblue;
+      border: 1px solid skyblue;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="up-container">
+      <div class="block">
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/icon_circle.png" >
+        <h3>Scholarship</h3>
+        <p>Available</p>
+      </div>
+      <div class="block">
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/icon_circle.png">
+        <h3>Scholarship</h3>
+        <p>Available</p>
+      </div>
+      <div class="block">
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/icon_circle.png" >
+        <h3>Scholarship</h3>
+        <p>Available</p>
+      </div>
+      <div class="clear"></div>
+  </div>
+  
+  
+    
+
+    <div id="popular-program">
+      <h1>Popular Program</h1>
+      <div >
+        <p>Graduate</p>
+        <p>PostGraduate</p>
+        <p>PHD Scholarship</p>
+        <p>Training</p>
+        <div class="clear"></div>
+      </div>
+    </div>
+
+    <div id="lower-div">
+      <div>
+        <img src="https://www.masaischool.com/static/campus/location_1/91springboard_min_1.jpg">
+        <h5>Agriculture</h5>
+        <h3>Chemical engneering</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor esse aliquam ut accusamus aspernatur quod.</p>
+        <button>APPLY NOW</button>
+      </div>
+
+      <div>
+        <img src="https://www.masaischool.com/static/campus/location_1/91springboard_min_1.jpg">
+        <h5>Agriculture</h5>
+        <h3>Mechanical engneering</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor esse aliquam ut accusamus aspernatur quod.</p>
+        <button>APPLY NOW</button>
+      </div>
+
+      <div>
+        <img src="https://www.masaischool.com/static/campus/location_1/91springboard_min_1.jpg">
+        <h5>Agriculture</h5>
+        <h3>Bio engneering</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor esse aliquam ut accusamus aspernatur quod.</p>
+        <button>APPLY NOW</button>
+      </div>
+      
+    </div>
+    
+  </div>
+</body>
+</html>

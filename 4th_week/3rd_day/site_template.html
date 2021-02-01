@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Template</title>
+  <style type="text/css"> 
+    #cont {
+      display: grid;
+      margin: 20px;
+      gap: 40px;
+      grid-template:"top top top"
+      "left right right" ;
+    }
+    #top {
+      height: 60px;
+      background-color: red;
+      grid-area: top;
+    }
+    #left {
+      height: 600px;
+      background-color: green;
+      grid-area: left;
+    }
+    #right{
+      height: 600px;
+      background-color: teal;
+      grid-area: right;
+    }
+  </style>
+</head>
+<body>
+  <div id="cont">
+    <div id="top"></div>
+    <div id="left"></div>
+    <div id="right"></div>
+  </div>
+</body>
+</html>

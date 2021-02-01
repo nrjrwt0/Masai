@@ -1,0 +1,96 @@
+CSS Selectors (IW): Wed, Jan 20, 2021 11:15 AM
+User checked in: 02 Hrs : 16 Mins ago
+No Data
+
+Notes
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/layout_4.jpg
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/layout_6.jpg
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/html/websites/uc_about.png
+
+
+
+
+
+
+
+
+CSS Selectors (WE) Submitted
+Problem
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/flex_1.jpg
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/layout_2.jpg
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/html/websites/masai_campus.png
+https://www.masaischool.com/static/campus/location_1/91springboard_min_1.jpg
+https://www.masaischool.com/static/campus/location_2/bhive_min_2.jpg
+https://www.masaischool.com/static/campus/location_3/workstudio_min_2.jpg
+
+
+
+
+
+
+
+
+
+CSS Selectors (YOU) Pending
+Problem
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/layout_5.jpg
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/flex_3.jpg
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/css_1.jpg
+https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/linus.jpg
+https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/khan.jpg
+
+
+
+
+
+
+
+
+
+Registration (Selectors) Pending
+Problem
+You can't use any style tags for any of the html tags and you have to use classes and ids to apply the styles, keep the usage of ids to minimal and optimise the usage of classes by using multiple classes
+HINT: Using CSS in HTML file
+
+<head>
+    <style type="text/css">
+        .class1 {
+
+        }
+        #id2  {
+
+        }
+    </style>
+</head>
+Use Box Model to build the layout
+
+Create a file called registration.html
+The layout should look like the given template https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/registration.jpg
+
+
+
+
+
+
+
+
+
+EatFit Event (Selectors) Pending
+Problem
+You can't use any style tags for any of the html tags and you have to use classes and ids to apply the styles, keep the usage of ids to minimal and optimise the usage of classes by using multiple classes
+HINT: Using CSS in HTML file
+
+<head>
+    <style type="text/css">
+        .class1 {
+
+        }
+        #id2  {
+
+        }
+    </style>
+</head>
+Use Box Model to build the layout
+
+Create a file called eatfit.html
+The layout should look like the given template https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/html/websites/eat_fit.png

@@ -1,0 +1,137 @@
+Notes
+Create a user object with some keys print all the keys along with their values
+Given an array find the unique items
+Create a user object with array of address objects print all the city names of the addresses
+Create a square object with a method to calculate the area of the square
+Create a user object with a marks key having an array of subject marks, with a method to add a new subject marks and also a method to calculate the highest marks
+
+
+
+
+
+
+
+JS Objects (WE) Pending
+Problem
+Create a product object with some keys print all the keys along with their values
+Given an array find the items that occur only once
+Create a user object with array of address objects print all the pincodes of the addresses
+Create a square object with a method to calculate the perimenter of the square
+Create a user object with a marks key having an array of subject marks, with a method to add a new subject marks and also a method to calculate the lowest marks
+
+
+
+
+JS Objects (YOU) Pending
+Problem
+Create a company object with some keys print all the keys along with their values
+Given an array of items find the elements that occur more than once
+Create a user object with array of address objects print all the city names along with the pincodes of the addresses
+Create a square object with two methods to calculate the perimenter and area of the square
+Create a user object with a marks key having an array of subject marks, with a method to add a new subject marks and also methods to calculate the lowest, highest and total marks
+
+
+
+
+
+
+
+
+
+
+
+
+Character Occurrence Pending
+Problem
+Given a string , calculate the occurrence of each and every character and print the output.
+
+Input
+
+Masai School
+Output
+
+M-1
+a-2
+s-1
+i-1
+S-1
+c-1
+h-1
+o-2
+l-1
+Submission Image/Video Instructions
+Print the output for the strings Transformation in education and kia seltos
+
+
+
+
+
+
+
+
+
+
+
+User Object Pending
+Problem
+Given an input of user Name, age and gender (seperated by spaces)
+Create a user objects with the keys name age and gender
+Print the output in the mentioned format using dot notation
+Sample Input
+Nrupul 32 Male
+Sample Output
+Name - Nrupul
+Age - 32
+Gender - Male
+Submission Image/Video Instructions
+Screenshot of the output for your name, age and gender
+
+
+
+
+
+
+
+
+
+
+Rectangle Object Pending
+Problem
+Create an object with the properties length and breadth
+The object must have the methods area and perimeter which will calculate and prints the area and perimeter based on the length and breadth
+Submission Image/Video Instructions
+Screenshot of the area and perimeter for the values 12 and 8
+
+
+
+
+
+
+
+
+
+String Object Pending
+Problem
+Create an object with a key call item having a string value
+Create the methods vowelsCount reverse changeCase
+The vowelsCount returns the count of vowels in the string
+The reverse returns the string in reverse order
+The changeCase flips the case lower to upper or upper to lower
+Submission Image/Video Instructions
+Screenshot of the output for the value FireFox
+
+
+
+
+
+
+
+
+Array Greater and Lesser Filter Pending
+Problem
+Create an object with has a array of numbers with the key data
+Create two methods lessThanItems and greaterThanItems both of them take a value as a parameter
+The lessThanItems returns all the elements in the array less than the provided value
+The greaterThanItems returns all the elements in the array greater than the provided value
+Submission Image/Video Instructions
+Screenshot of the return values of both the methods for the array [1, 2, 6, 7, 3, 4, 9, 0] with the parameter for lessThanItems as 4 and greaterThanItems as 6

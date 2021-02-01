@@ -1,0 +1,118 @@
+Notes
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/layout_4.jpg
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/layout_5.jpg
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/layout_6.jpg
+
+
+
+
+
+
+
+HTML CSS (Box Model) (WE) Submitted
+Problem
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/layout_4.jpg (with 3 rows and 4 boxes per row)
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/layout_5.jpg (With the red box a the bottom)
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/flex_3.jpg
+
+
+
+
+
+
+HTML CSS (Box Model) (YOU) Submitted
+Problem
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/layout_5.jpg (With the red box a the bottom and bigger blue box on the left and the green box on the right)
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/flex_1.jpg
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/html/websites/uc_about.png
+
+
+
+
+
+
+
+
+
+
+Zig Zag (Box Model) Pending
+Problem
+Build the given layout using divs and below-mentioned style properties
+
+`color`
+`width`
+`height`
+`margin`
+`padding`
+`float`
+`clear`
+`border-radius`
+Create a file called layout_2.html
+The layout should look like the given template https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/layout_2.jpg
+Code File
+Submission Image/Video Instructions
+Take a screenshot of how the page looks in your browser
+
+
+
+
+
+
+
+
+
+
+Unix (Box Model) Pending
+Problem
+Build the given layout using divs and below-mentioned style properties
+
+`color`
+`width`
+`height`
+`margin`
+`padding`
+`float`
+`clear`
+`border-radius`
+Create a file called unix.html
+The layout should look like the given template https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/css_1.jpg
+Image Links
+https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/linus.jpg
+https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/khan.jpg
+Code File
+Submission Image/Video Instructions
+Take a screenshot of how the page looks in your browser
+
+
+
+
+
+
+
+
+
+
+
+
+Masai Campus (Box Model) Pending
+Problem
+Build the given layout using divs and below-mentioned style properties
+
+`color`
+`width`
+`height`
+`margin`
+`padding`
+`float`
+`clear`
+`border-radius`
+Create a file called masai_campus.html
+The layout should look like the given template https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/html/websites/masai_campus.png
+Image Links
+https://www.masaischool.com/static/campus/location_1/91springboard_min_1.jpg
+https://www.masaischool.com/static/campus/location_2/bhive_min_2.jpg
+https://www.masaischool.com/static/campus/location_3/workstudio_min_2.jpg
+Code File
+Submission Image/Video Instructions
+Take a screenshot of how the page looks in your browser
+

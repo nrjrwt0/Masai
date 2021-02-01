@@ -1,0 +1,68 @@
+
+<html>
+    <head>
+        <title>Practise Creators</title>
+    </head>
+    <body>
+        <div id="headings">
+        </div>
+        <div id="cont">
+        </div>
+        <ul id="vikings">
+            <li>Priyanshu</li>
+        </ul>
+        <button onclick="createH1()">Create H1</button>
+        <button onclick="createH3()">Create 2 H3</button>
+        <button onclick="create10div()">Create DIVS</button>
+        <button onclick="addStudent()">Add Students</button>
+        <button onclick="addCopyright()">Add Copyright</button>
+        <script>
+            var students = ['Ajay','Akshay','Anusha','Chandrashekhara','Haren','Hasaan','Mahesh','Mousumi','Pavan','Rahul','Sumanta','Venkatesh','Vetrival','Vijayendra'];
+
+          function createH1(){
+            var h1 = document.createElement("h1");
+            h1.textContent = "MASAI";
+            var parent = document.getElementById("headings");
+
+            parent.appendChild(h1);
+          }
+          function createH3(){
+            var h3_1 = document.createElement("h3");
+            var h3_2 = document.createElement("h3");
+            h3_1.textContent = "A Transformation in education!";
+            h3_2.textContent = "Learn to earn pay when you get.";
+            var parent = document.getElementById("headings");
+
+            parent.appendChild(h3_1);
+            parent.appendChild(h3_2);
+          }
+          function  create10div(){
+            var parent = document.getElementById("cont");
+            
+            for(var i =  1; i <= 10; i++){
+              var divs = document.createElement("div");
+              divs.textContent = "content" + i;
+              parent.appendChild(divs);
+            }  
+          }
+          function addStudent(){
+            var parent = document.getElementById("vikings");
+            for(var i = 0; i < students.length; i++){
+              var elem = document.createElement("li");
+              elem.textContent = students[i];
+              parent.appendChild(elem);
+            }
+          }
+
+          function  addCopyright(){
+            var item = document.createElement("p");
+            item.textContent = " @ masai 2019";
+
+            var body = document.body;
+            var btn = document.querySelector("button");
+
+            body.insertBefore(item,btn)
+          }
+        </script>
+    </body>
+</html>

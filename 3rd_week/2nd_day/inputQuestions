@@ -1,0 +1,95 @@
+Input String Length Submitted
+Problem
+Take input from the user and print the no of characters in the input
+Sample Input - Masai
+Sample Output - 5
+Submission Image/Video Instructions
+Screenshot of the output for your name input
+
+
+
+
+
+Input Decimal Numbers Submitted
+Problem
+Take input from the user and print the number of digits after the decimal point
+Sample Input-1 12.63
+Sample Output-1 2
+Sample Input-2 32
+Sample Output-2 0
+Submission Image/Video Instructions
+Screenshot of the output for the inputs 98.4923, 3.141592, -0.342, 1024
+
+
+
+
+
+Input Box Volume Submitted
+Problem
+Given the input of length width and height (Separated by spaces). Print the volume of the box
+Sample Input 4 2 3
+Sample Output 24
+Submission Image/Video Instructions
+Screenshot of the output for the inputs (12 4 5), (2 1 8)
+
+
+
+
+Problem
+Given a particular date input. Print it in a human-readable format
+Sample input 2020-06-10
+Sample output 10 June, 2020
+Submission Image/Video Instructions
+Screenshot of the output for your birthdate
+
+
+
+
+Input Mix Max Scores Submitted
+Problem
+Given an input of scores (separated by spaces) find the Mix and Max score
+Sample Input 12 4 1 98 26 83
+Sample Output
+Min - 1
+Max - 98
+Submission Image/Video Instructions
+Screenshot of the output for the inputs (120 20 9 41 57), (1 21 40 89)
+
+
+
+
+
+
+
+
+
+Input Filter Names By City Submitted
+Problem
+Given a city name (1st line) and the names or persons along with the city. Print the names of the people with the given city
+Sample Input
+Bangalore
+Yogesh Bangalore
+Aman Patna
+Rahul Patna
+Prateek Mumbai
+Sandhya Bangalore
+Nrupul Hyderabad
+Sample Output
+Yogesh
+Sandhya
+Submission Image/Video Instructions
+Screenshot of the output for the below set of inputs
+Patna
+Yogesh Bangalore
+Aman Patna
+Rahul Patna
+Prateek Mumbai
+Sandhya Bangalore
+Nrupul Hyderabad
+Delhi
+Yogesh Bangalore
+Aman Patna
+Rahul Patna
+Prateek Mumbai
+Sandhya Bangalore
+Nrupul Hyderabad

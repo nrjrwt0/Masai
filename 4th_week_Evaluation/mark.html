@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marks Dom</title>
+  <style>
+    #cont{
+      height: 90vh;
+      width: 90vw;
+    }
+    #wrapper{
+      /* border: 1px solid red; */
+      width: 80%;
+      margin: auto;
+    }
+    h1{
+      margin: 20px;
+    }
+    input{
+      display: block;
+      margin: 20px;
+      width: 50%;
+      height: 30px;
+      font-size: 17px;
+    }
+
+    table,td,tr{
+      border: 1px solid black;
+      text-align: center;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div id="cont">
+    <div id="wrapper">
+    <h1>Student Form</h1>
+    <form>
+      <input type="text" placeholder="Enter Your Name" id="name">
+      <input type="text" placeholder="Enter Your Age" id="age">
+      <input type="text" placeholder="Enter Your Science Marks" id="sci">
+      <input type="text" placeholder="Enter Your English Marks" id="eng">
+      <input type="text" placeholder="Enter Your Maths Marks" id="maths">
+      <input type="submit" id="btn">
+    </form>
+
+    <table>
+      <tr>
+        <td>NAME</td>
+        <td>AGE</td>
+        <td>SCIENCE MARKS</td>
+        <td>ENGLISH MARKS</td>
+        <td>MATHS MARKS</td>
+        <td>TOTAL MARKS</td>
+        <td>DELETE DATA</td>
+      </tr>
+    </table>
+  </div>
+</div>
+  <script>
+    var namee = document.getElementById("name");
+    var age= document.getElementById("age");
+    var sci = document.getElementById("sci");
+    var eng = document.getElementById("eng");
+    var maths = document.getElementById("maths");
+    var btn = document.querySelector("#btn");
+
+    var parent = document.querySelector("table");
+
+    function delItem(event){
+      target = event.target;
+      item = target.parentNode.parentNode;
+      item.remove();
+    }
+
+
+    function AddStudentData(event){
+      event.preventDefault();
+      if(namee.value != "" && age.value != "" && sci.value !="" && eng.value != "" && maths.value !="" ){
+
+        var row = document.createElement("tr");
+        var col1 = document.createElement("td");
+        var col2 = document.createElement("td");;
+        var col3 = document.createElement("td");;
+        var col4 = document.createElement("td");;
+        var col5 = document.createElement("td");;
+        var col6 = document.createElement("td");;
+        var col7 = document.createElement("td");;
+        var delbtn = document.createElement("button");
+        // console.log(namee.value);
+        col1.innerText = namee.value
+        col2.innerText = age.value
+        col3.innerText = sci.value
+        col4.innerText = eng.value
+        col5.innerText = maths.value
+        col6.innerText = Number(sci.value) + Number(eng.value) + Number(maths.value);
+
+        delbtn.innerText = "X";
+
+
+        var inputs = document.querySelectorAll("input");
+
+        for(var i = 0; i < inputs.length - 1 ;i++){
+          inputs[i].value = "";
+        }
+        // inputs.forEach(function(el){
+        //   console.log(el.value)
+            
+        // })
+        
+        
+        row.appendChild(col1);
+        row.appendChild(col2);
+        row.appendChild(col3);
+        row.appendChild(col4);
+        row.appendChild(col5);
+        row.appendChild(col6);
+
+        col7.appendChild(delbtn);
+        row.appendChild(col7);
+
+        parent.appendChild(row);
+
+        delbtn.addEventListener('click', delItem)
+      }
+    }
+
+
+    btn.addEventListener('click', AddStudentData);
+  </script>
+</body>
+</html>

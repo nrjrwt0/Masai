@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Min & Max Leaderboard</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        height: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      #main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .wrapper {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* height: 50px; */
+        width: 300px;
+      }
+      .min-max {
+        border: 1px solid red;
+        width: 300px;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .min {
+        border: 1px solid red;
+        background-color: red;
+        width: 100px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        border: 1px solid black;
+      }
+      .max {
+        border: 1px solid red;
+        background-color: green;
+        width: 100px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        border: 1px solid black;
+      }
+      .score {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 100px 0 0 0;
+      }
+      .score-head {
+        border: 1px solid red;
+        background-color: grey;
+        width: 200px;
+        height: 50px;
+        border: 1px solid black;
+      }
+      /* .score-head-block{
+            display: flex;
+            flex-direction: column;
+        } */
+      .row {
+        border: 1px solid red;
+        width: 200px;
+        height: 100px;
+        /* margin-top: 5x; */
+        display: flex;
+        justify-content: space-between;
+      }
+      .box {
+        border: 1px solid red;
+        width: 50px;
+        height: 50px;
+        background-color: orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+      .row1 {
+        border: 1px solid red;
+        margin: 100px 0 0 0;
+      }
+      .row1 .box1,
+      .row1 .box3,
+      .row3 .box1,
+      .row3 .box3 {
+        border: 1px solid red;
+        background-color: green;
+      }
+      .row4 {
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+      }
+      .box0 {
+        border: 1px solid red;
+        background-color: purple;
+      }
+      button {
+        border: 1px solid red;
+        width: 200px;
+        height: 50px;
+        background-color: black;
+        text-align: center;
+        color: blanchedalmond;
+      }
+      .score-head {
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div class="wrapper">
+        <div class="min-max">
+          <div class="min-block">
+            <div class="min" id="min">43</div>
+            <p>MIN</p>
+          </div>
+          <div class="max-block">
+            <div class="max" id="max">2019</div>
+            <p>MAX</p>
+          </div>
+        </div>
+        <div class="score">
+          <div class="score-head-block">
+            <p>SCORE</p>
+            <br />
+            <div class="score-head" id="score-head"></div>
+          </div>
+          <div class="score-body">
+            <div class="row row1">
+              <div class="box box1" onclick="inp(1)" value="1">1</div>
+              <div class="box box2" onclick="inp(2)" value="2">2</div>
+              <div class="box box3" onclick="inp(3)" value="3">3</div>
+            </div>
+            <div class="row row2">
+              <div class="box box1" onclick="inp(4)" value="4">4</div>
+              <div class="box box2" onclick="inp(5)" value="5">5</div>
+              <div class="box box3" onclick="inp(6)" value="6">6</div>
+            </div>
+            <div class="row row3">
+              <div class="box box1" onclick="inp(7)" value="7">7</div>
+              <div class="box box2" onclick="inp(8)" value="8">8</div>
+              <div class="box box3" onclick="inp(9)" value="9">9</div>
+            </div>
+            <div class="row row4">
+              <div class="box box0" onclick="inp(0)" value="0">0</div>
+            </div>
+            <button onclick="minMax()" class="enter">ENTER</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var add = "";
+      var min = document.getElementById("min").textContent;
+      var max = document.getElementById("max").textContent;
+      function inp(num) {
+        if (add == "") {
+          add = "" + num;
+        } else {
+          add += num;
+        }
+        // var score = ;
+        document.querySelector("#score-head").textContent = add;
+        console.log(
+          document.querySelector("#score-head").textContent,
+          min,
+          max
+        );
+      }
+      function zero() {
+        add = "";
+        document.querySelector("#score-head").textContent = "";
+      }
+      function minMax() {
+        if (
+          Number(document.querySelector("#score-head").textContent) >
+          Number(max)
+        ) {
+          document.getElementById("max").textContent = document.querySelector(
+            "#score-head"
+          ).textContent;
+        } else if (
+          Number(document.querySelector("#score-head").textContent) <
+          Number(min)
+        ) {
+          document.getElementById("min").textContent = document.querySelector(
+            "#score-head"
+          ).textContent;
+        }
+        zero();
+      }
+    </script>
+  </body>
+</html>

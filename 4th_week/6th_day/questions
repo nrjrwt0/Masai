@@ -1,0 +1,309 @@
+Sum and Conditions
+Description
+
+You are given an array of  N integers. Write a program that prints "Greater" (without quote) if the sum of all elements present in the array is greater than 100, else print "Lesser" (without quotes).
+
+
+Input
+Input format
+
+First line contains N
+
+Second line contains N space separated integers which are elements of the array.
+
+Constraints
+
+n<1000
+
+
+Output
+Output Format
+
+Output Greater/Lesser depending upon the sum
+
+
+Sample Input 1 
+
+5
+21 24 2 54 8
+Sample Output 1
+
+Greater
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sum Related Problem
+Description
+
+You are given a number N, find sum of all even numbers which occur before N (inclusive of N if N is even)
+
+
+Input
+Input Format
+
+First and the only line contains one number N.
+
+Constraints
+
+N<10000
+
+
+Output
+Output Format
+
+Output one number which is sum (under above condition)
+
+
+Sample Input 1 
+
+8
+Sample Output 1
+
+20
+
+
+
+
+
+
+
+
+
+
+Odd Sum Below N
+Description
+
+You are given a number N, find the sum of all odd numbers presents below it. (including N if N is an odd number)
+
+
+Input
+Input format
+
+First and the only line contains number N
+
+Constraints
+
+N<100000
+
+
+
+Output
+Output the sum of all such numbers
+
+
+Sample Input 1 
+
+7
+Sample Output 1
+
+16
+
+
+
+
+
+
+
+
+
+Alternate Sum
+Description
+
+You are given an array of N integers. Your task is to write a program that calculates the sum of all alternate elements starting from the first(0th index element of array) integer.
+
+
+Input
+Input Format:
+
+First line contains N
+
+Second line contains N space separated integers
+
+Constraints:
+
+N<1000
+
+
+Output
+Output the sum under above conditions
+
+
+Sample Input 1 
+
+7
+4 5 5 5 6 6 7
+Sample Output 1
+
+22
+
+
+
+
+
+
+
+
+
+
+
+
+
+JS DOM Events & Attributes (IW): Sat, Jan 30, 2021 11:00 AM
+No Data
+
+Notes
+Problem-1
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>My color should change when I double click the button!</h1>
+  <button>Click here to change my color</button>
+  <script>
+
+  </script>
+</body>
+</html>
+A button is given to you.
+
+Using JavaScript do the following:
+
+When the button is double clicked the color of the h1 with the text My color should change when I double click the button! tag must change to a random color. It must not change after the color changes for 5 times
+
+Problem-2
+Create a form with input filed that a number input and on submission will create those many number of boxes given in the input. On clicking on any of the newly create box it must turn to red color
+
+Problem-3
+<html>
+    <head>
+        <title>Practise Attributes</title>
+        <style type="text/css">
+            .class-h1 {
+                color: red
+            }
+            .class-h3 {
+                color: green;
+            }
+            .class-h5 {
+                color: orange;
+            }
+            .class-div {
+                color: yellow;
+                font-size: 20px;
+                margin: 10px;
+            }
+            .class-p {
+                border: 1px solid black;
+                padding: 5px;
+            }
+            #test-2 {
+                font-size: 30px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>First H1</h1>
+        <h1>Second H1</h1>
+        <h3>First H3</h3>
+        <h3>Second H3</h3>
+        <h5>First H5</h5>
+        <h5>Second H5</h5>
+        <h5>Third H5</h5>
+        <div id="box">
+            <div>First DIV</div>
+            <div>Second DIV</div>
+            <div>Third DIV</div>
+        </div>
+        <div>Fourth DIV</div>
+        <div id="cont">
+            <p>First P</p>
+            <p>Second P</p>
+            <p>Third P</p>
+        </div>
+        <div id="temp">
+            <p>Test P1</p>
+            <p>Test P2</p>
+            <p>Test P3</p>
+        </div>
+        <hr/>
+        <button>Change H1</button>
+        <button>Change H3</button>
+        <button>Change H5</button>
+        <button>Change DIV</button>
+        <button>Change P</button>
+        <button>Set ID</button>
+        <script>         
+        </script>
+    </body>
+</html>
+Complete the functionality in the file attributes.html
+
+On clicking the button Change H1 the first <h1> should have the class class-h1
+On clicking the button Change H3 all <h3> should have the class class-h3
+On clicking the button Change H5 all <h5> should have the class class-h5
+On clicking Change DIV all the div inside the div with id box should have the class class-div
+On clicking Change P all the p inside the div with the id cont should have the class class-p
+On clicking Set ID the second p inside div with the id temp should have the id test-2
+
+
+
+
+
+
+
+
+
+
+JS DOM Events & Attributes (WE) Pending
+Problem
+Create a TODO list application
+
+
+
+
+
+
+
+
+
+
+
+Button Click Color Change Pending
+Problem
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Change the buttons text color random value</h1>
+  <button>Click here to change my color</button>
+  <script>
+
+  </script>
+</body>
+</html>
+A button is given to you.
+
+Using JavaScript do the following:
+
+When the button is clicked the color of the text in the button must change to a random value.
+
+-Bonus Challenge:
+
+Create another button with the text Click me to change my color to an array value!
+
+Make an array of any number of colors ["red", "green, "blue" ....].
+
+When the button is clicked the background-color of the button must change to the next value in the array.
+
+
+
+

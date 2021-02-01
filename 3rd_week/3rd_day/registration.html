@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Registration</title>
+  <style type="text/css">
+      .wrap-cont{
+        width: 740px;
+        margin:100px auto;
+      }
+      .container{
+        float: left;
+        width: 340px;
+      }
+      .label{
+        margin:30px 15px 5px 15px;
+        font-size: 24px;
+      }
+      .input{
+        width: 250px;
+        height: 36px;
+        margin: 10px 15px 30px 15px;
+        
+      }
+      #error{
+        color: red;
+        margin: -25px 15px ;
+        font-size: 20px;
+      }
+      .black-bg{
+        background-color: black;
+        color: white;
+        padding: 20px;
+      }
+      
+      #btn{
+        width: 220px;
+        margin:40px 16px;
+        text-align: center;
+        font-size: 24px;
+      }
+      .big-font{
+        font-size: 44px;
+        margin: 0px ;
+        margin-bottom: 20px;
+      }
+
+      .up-font{
+        font-size: 35px;
+        margin: 5px;
+      }
+  </style>
+</head>
+<body>
+  <div class="wrap-cont">
+    <div class="container">
+      <form>
+        <label for="name_id" class="label">Name</label>
+        <input type="text" class="input" id="name_id">
+        <label for="email_id" class="label">Email</label>
+        <input type="email" class="input" id="email_id">
+        <label for="mobile_id" class="label">Mobile</label>
+        <input type="text" class="input" id="mobile_id">
+        <p id="error">Enter a valid mobile</p>
+        <div class="black-bg big-font" id="btn">REGISTER</div>
+      </form>
+    </div>
+    <div class="container black-bg">
+      <p class="up-font">NAME</p>
+      <h1 class="big-font">MASAI</h1>
+      <br>
+      <p class="up-font">EMAIL</p>
+      <h3 >email@masaischool.com</h3>
+      <br>
+      <p class="up-font">MOBILE</p>
+      <h2>9876543210</h2>
+    </div>
+  </div>
+</body>
+</html>

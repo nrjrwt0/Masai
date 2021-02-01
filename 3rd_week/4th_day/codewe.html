@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Code We</title>
+    <style type="text/css">
+      body > div{
+        width:400px;
+        padding: 50px;
+        float: left;
+        margin: auto;
+      }
+      #reg-form input{
+        border: 1px solid black;
+        width: 300px;
+        height: 40px;
+        margin-top: 5px;
+        margin-bottom: 30px;
+      }
+      #reg-form label{
+        font-size: 24px;
+      }
+      input + label {
+        margin-top: 20px;
+        
+      }
+      label, input{
+        display: block;
+      }
+
+      #reg-form input[type="submit"]{
+        background-color: black;
+        color: white;
+        font-size: 32px;
+        height: 50px;
+        padding: 10px;
+      }
+      #reg-form p {
+        color: red;
+        margin-bottom: 30px;
+        font-size: 18px;
+      }
+      #display-form > div{
+        background-color: black;
+        color: white;
+        padding: 40px 20px;
+      }
+      #display-form > div > p:nth-child(odd) {
+        font-size: 26px;
+        margin-bottom: 3px;
+      }
+      #display-form > div > p:nth-child(even){
+        font-size: 32px;
+        margin-top: 4px;
+        margin-bottom: 20px;
+      }
+      #display-form > div > p:nth-child(2){
+        font-size: 48px;
+      }
+      .clear{
+        clear: both;
+      }
+
+
+
+      #invite-cont{
+        text-align: center;
+        background-color:#322F31 ;
+      }
+      #invite-cont div{
+        margin: 40px;
+      }
+      #invite-cont h2{
+        color: white;
+      }
+      #invite-cont h1{
+        color:#FF0D68;
+      }
+      #invite-cont hr {
+        width: 100px;
+        height: 3px;
+        background-color: white;
+        border-radius: 10px;
+      }
+      #invite-cont > button{
+        background-color: #FF0D68;;
+        width: 400px;
+        height: 40px;
+        border-radius: 20px;
+        color: white;
+        font-size: 20px;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="reg-form">
+      <form>
+          <label for="name">NAME</label>
+          <input id="name" type="text">
+          <label for="email">EMAIL</label>
+          <input id="email" type="email">
+          <label for="pass">PASSWORD</label>
+          <input id="pass" type="password">
+          <p>Enter a valid Mobile</p>
+          <input type="submit" value="REGISTER">
+      </form>
+    </div>
+    <div id="display-form">
+      <div>
+        <p>NAME</p>
+        <p>MASAI</p>
+        <p>EMAIL</p>
+        <p>email@masaischool.com</p>
+        <p>MOBILE</p>
+        <p>9876543210</p>
+      </div>
+    </div>
+
+    <div id="invite-cont">
+      <h2>Today Sun, 26th Apr</h2>
+      <h2>Schedule - 7:00 AM onwards</h2>
+      <div>
+        <h2>Parathe Sharathe with</h2>
+        <h1>Chef Archana Doshi</h1>
+        <hr>
+        <h2>Parathe Sharathe with</h2>
+        <h1>Chef Archana Doshi</h1>
+        <hr>
+        <h2>Parathe Sharathe with</h2>
+        <h1>Chef Archana Doshi</h1>
+      </div>
+      <button>SIGN UP NOW</button>
+    </div>
+  </body>
+</html>

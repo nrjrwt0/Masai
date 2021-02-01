@@ -1,0 +1,344 @@
+Javascript DOM (IW): Thu, Jan 28, 2021 11:30 AM
+User checked in: 02 Hrs : 31 Mins ago
+
+Notes
+Problem-1
+Create an age_check.html file. With an input field (takes the birth year of the user) and a button You must fill in valid id and other attributes for elements to make the buttons work.
+
+When the user clicks the button the following must happen:
+
+If the user is older than 18 print You can drive in India! in the p tag.
+If the user is younger than 18 print You can't drive in India in the p tag.
+If the user is exactly 18 years old print You are just old enough to drive in India! in the p tag.
+Problem-2
+<html>
+    <head>
+        <title>Practise Selectors</title>
+    </head>
+    <body>
+        <h1>First H1</h1>
+        <h1>Second H1</h1>
+        <h3>First H3</h3>
+        <h3>Second H3</h3>
+        <h5>First H5</h5>
+        <h5>Second H5</h5>
+        <h5>Third H5</h5>
+        <div class="purple">First DIV</div>
+        <div class="yellow">Second DIV</div>
+        <div class="orange">Third DIV</div>
+        <p class="purple">First P</p>
+        <p class="yellow">Second P</p>
+        <p class="orange">Third P</p>
+        <hr/>
+        <button>Change H1</button>
+        <button>Change H3</button>
+        <button>Change H5</button>
+        <button>Change Purple</button>
+        <button>Change Yellow</button>
+        <button>Change Orange</button>
+        <script>
+        </script>
+    </body>
+</html>
+Complete the functionality in the file selectors.html
+
+On clicking the button Change H1 the colour of first <h1> should turn to green
+On clicking the button Change H3 the colour of all <h3> should turn to blue
+On clicking the button Change H5 the colour of all <h5> should turn to red
+On clicking Change Purple all the elements with the class purple should change to purple
+On clicking Change Yellow all the elements with the class yellow should change to yellow
+On clicking Change Orange all the elements with the class orange should change to orange
+Problem-3
+<html>
+    <head>
+        <title>Practise Creators</title>
+    </head>
+    <body>
+        <div id="headings">
+        </div>
+        <div id="cont">
+        </div>
+        <ul id="hobbies">
+            <li>Coding</li>
+        </ul>
+        <button>Create H1</button>
+        <button>Create 2 H3</button>
+        <button>Create Paragraphs</button>
+        <button>Add Students</button>
+        <button>Add Copyright</button>
+        <script>
+            var hobbies = [];
+        </script>
+    </body>
+</html>
+Complete the functionality in the file creators.html
+
+On clicking the button Create H1 create a <h1> with the content inside the
+with the idheadings`
+On clicking the button Create 2 H3 create two <h3> with the content <Your Address> and <Your City & State> inside the <div> with the id headings
+On clicking the button Create Paragraphs create ten <p> with the content Content 1 to Content 10 inside the div with the id cont (HINT: Use loops)
+On clicking the button Add Hobbies add all the hobbies as a <li> element below Coding in the given <ul> the list is already provided to you as a variable inside script tag
+On clicking the button Add Copyright add a p tag with the text @ masai 2019 before the button Create H1
+Problem-4
+<html>
+    <head>
+        <title>Practise Deletions</title>
+    </head>
+    <body>
+        <h1>First H1</h1>
+        <h1>Second H1</h1>
+        <h3>First H3</h3>
+        <h3>Second H3</h3>
+        <div id="headings">
+            <h6>First H6</h6>
+            <h6>Second H6</h6>
+            <h6>Third H6</h6>
+        </div>
+        <div id="cont">
+            <div class="green">First DIV</div>
+            <div class="red">Second DIV</div>
+            <div class="blue">Third DIV</div>
+            <p class="green">First P</p>
+            <p class="red">Second P</p>
+            <p class="blue">Third P</p>
+        </div>
+        <hr/>
+        <button>Remove H1</button>
+        <button>Remove H3</button>
+        <button>Remove H5</button>
+        <button>Remove Green</button>
+        <button>Remove DIVS</button>
+        <script>
+        </script>
+    </body>
+</html>
+Complete the functionality in the file deletions.html
+
+On clicking the button Remove H1 both the <h1> should get removed from the page
+On clicking the button Remove H3 the first <h3> should be removed from the page
+On clicking the button Remove H6 all the <h6> from the page should be removed
+On clicking the button Remove Green all the elements inside cont with the class green should be removed from the page
+On clicking the button Remove DIVS all the div elements inside cont should be removed from the page
+
+
+
+
+
+
+
+
+
+
+
+
+
+JS DOM (IW)
+User checked in: 02 Hrs : 31 Mins ago
+JS DOM (WE) Pending
+Problem
+Problem-1
+Create an age_check.html file. With an input field (takes the age of the user) and a button You must fill in valid id and other attributes for elements to make the buttons work.
+
+When the user clicks the button the following must happen:
+
+If the user is older than 18 print You can drive in India! in the p tag.
+If the user is younger than 18 print You can't drive in India in the p tag.
+If the user is exactly 18 years old print You are just old enough to drive in India! in the p tag.
+Problem-2
+<html>
+    <head>
+        <title>Practise Selectors</title>
+    </head>
+    <body>
+        <h1>First H1</h1>
+        <h1>Second H1</h1>
+        <h3>First H3</h3>
+        <h3>Second H3</h3>
+        <h5>First H5</h5>
+        <h5>Second H5</h5>
+        <h5>Third H5</h5>
+        <div class="green">First DIV</div>
+        <div class="red">Second DIV</div>
+        <div class="blue">Third DIV</div>
+        <p class="green">First P</p>
+        <p class="red">Second P</p>
+        <p class="blue">Third P</p>
+        <hr/>
+        <button>Change H1</button>
+        <button>Change H3</button>
+        <button>Change H5</button>
+        <button>Change Green</button>
+        <button>Change Red</button>
+        <button>Change Blue</button>
+        <script>
+        </script>
+    </body>
+</html>
+Complete the functionality in the file selectors.html
+
+On clicking the button Change H1 the colour of first <h1> should turn to red
+On clicking the button Change H3 the colour of all <h3> should turn to green
+On clicking the button Change H5 the colour of all <h5> should turn to blue
+On clicking Change Green all the elements with the class green should change to green
+On clicking Change Blue all the elements with the class blue should change to blue
+On clicking Change Red all the elements with the class red should change to red
+Problem-3
+<html>
+    <head>
+        <title>Practise Creators</title>
+    </head>
+    <body>
+        <div id="headings">
+        </div>
+        <div id="cont">
+        </div>
+        <ul id="vikings">
+            <li>Priyanshu</li>
+        </ul>
+        <button>Create H1</button>
+        <button>Create 2 H3</button>
+        <button>Create DIVS</button>
+        <button>Add Students</button>
+        <button>Add Copyright</button>
+        <script>
+            var students = ['Ajay','Akshay','Anusha','Chandrashekhara','Haren','Hasaan','Mahesh','Mousumi','Pavan','Rahul','Sumanta','Venkatesh','Vetrival','Vijayendra'];
+        </script>
+    </body>
+</html>
+Complete the functionality in the file creators.html
+
+On clicking the button Create H1 create a <h1> with the content MASAI inside the <div> with the id headings
+On clicking the button Create 2 H3 create two <h3> with the content A Transformation in education! and Learn to earn, pay when you get. inside the <div> with the id headings
+On clicking the button Create DIVS create ten <div> with the content Content 1 to Content 10 inside the div with the id cont (HINT: Use loops)
+On clicking the button Add Students add all the students as a <li> element below Priyanshu in the given <ul> the list is already provided to you as a variable inside script tag
+On clicking the button Add Copyright add a p tag with the text @ masai 2019 before the button Create H1
+Problem-4
+<html>
+    <head>
+        <title>Practise Deletions</title>
+    </head>
+    <body>
+        <h1>First H1</h1>
+        <h1>Second H1</h1>
+        <h3>First H3</h3>
+        <h3>Second H3</h3>
+        <div id="headings">
+            <h5>First H5</h5>
+            <h5>Second H5</h5>
+            <h5>Third H5</h5>
+        </div>
+        <div id="cont">
+            <div class="green">First DIV</div>
+            <div class="red">Second DIV</div>
+            <div class="blue">Third DIV</div>
+            <p class="green">First P</p>
+            <p class="red">Second P</p>
+            <p class="blue">Third P</p>
+        </div>
+        <hr/>
+        <button>Remove H1</button>
+        <button>Remove H3</button>
+        <button>Remove H5</button>
+        <button>Remove Red</button>
+        <button>Remove DIVS</button>
+        <script>
+        </script>
+    </body>
+</html>
+Complete the functionality in the file deletions.html
+
+On clicking the button Remove H1 the <h1> with the content First H1 should get removed from the page
+On clicking the button Remove H3 both the <h3> should get removed from the page
+On clicking the button Remove H5 all the <h5> from the page should be removed
+On clicking the button Remove Red all the elements inside cont with the class red should be removed from the page
+On clicking the button Remove DIVS all the div elements inside cont should be removed from the page
+File
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+JS DOM
+Country Continent Pending
+Problem
+Create an country_continent.html file. With a select field (having country options) and a button You must fill in valid id and other attributes for elements to make the buttons work.
+
+Within the select you must have the following options, the options must also have the same value as given below:
+
+India
+United States of America
+China
+Nepal
+Australia
+France
+Germany
+South Africa
+Nigeria
+Mexico
+Argentina
+Brazil
+Canada
+Singapore
+Sweden
+eg:
+
+<select id = "continent_select">
+    <option value = "India"> India </option>    
+</select>
+Now using Javascript do the following:
+
+When the button Find continent is clicked, you must output an alert on the page which contains the text The continent is <name of continent>
+Eg: If the input is India -> The continent is Asia
+If the input is Argentina -> The continent is South America
+This link https://simple.wikipedia.org/wiki/List_of_countries_by_continents shows you the continents for each country if you are unsure.
+
+Hint: Use a Switch statement!
+
+Code File
+Submission Image/Video Instructions
+Screenshot showing one of the country alert
+File
+Proof
+Dashboard
+Lectures
+Quiz
+Assignments
+Discussions
+Team Directory
+
+
+
+
+
+
+
+
+
+
+
+Marriage Age Validator Pending
+Problem
+Create a file called marraiage_age_validator.html
+It should take the gender (dropdown) and year of birth as input and show an alert if the user is of the valid legal age to get married or not
+Code File
+Submission Image/Video Instructions
+Screenshot of the alert for one of the value
+
+
+
+
+
+

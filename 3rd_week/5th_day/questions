@@ -1,0 +1,133 @@
+Square It
+Description
+
+You are given an integer N, print its  [square value](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow) (number raised to exponent 2)
+
+
+Input
+Input Format
+
+First and the only line contains one integer N
+
+Constraints
+
+N<100
+
+
+Output
+Output an integer which is square of N
+
+
+Sample Input 1 
+
+7
+Sample Output 1
+
+49
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pay for Phones!
+Description
+
+You are given prices of 4 different mobile phones and also provided with the number of each of the phones that you need to buy.
+
+You have with you 150000 units of money. Comment if it is possible to buy those phones or not.
+
+
+Input
+Input Format :
+
+First line contains 4 space separated positive values which are prices of the 4 mobile phones respectively.
+
+Second line contains the quantity/count of each mobile phones that you need to buy
+
+
+
+Constraints :
+
+price of each phone < 100000
+
+
+Output
+Output "Possible" (without quotes) if it is possible to buy desired numbers of mobile phones.
+
+Else in all other case, print "Not Possible" (without quotes)
+
+
+Sample Input 1 
+
+10000 20000 15000 5000
+2 3 4 3
+Sample Output 1
+
+Not Possible
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSS Properties-II (IW): Fri, Jan 22, 2021 11:15 AM
+User checked in: 03 Hrs : 35 Mins ago
+No Data
+
+We'd love to hear your feedback!
+Notes
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/layout_4.jpg
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/layout_6.jpg
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/html/websites/uc_about.png
+
+
+
+
+
+
+
+
+Problem
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/flex_1.jpg
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/layout_2.jpg
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/html/websites/masai_campus.png
+https://www.masaischool.com/static/campus/location_1/91springboard_min_1.jpg
+https://www.masaischool.com/static/campus/location_2/bhive_min_2.jpg
+https://www.masaischool.com/static/campus/location_3/workstudio_min_2.jpg
+
+
+
+
+
+
+
+
+
+CSS Properties-II (YOU) Pending
+Problem
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/layout_5.jpg
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/flex_3.jpg
+Layout https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/css/css_1.jpg
+https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/linus.jpg
+https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/khan.jpg

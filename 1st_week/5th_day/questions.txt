@@ -1,0 +1,192 @@
+JS Conditional Statements (WE) Pending
+Problem
+
+Given two numbers A and B print which is smaller
+Given two passwords print "Wrong Password" if both the passwords doesn't match
+Given a number if it is odd print "Odd Number"
+Given the year of birth if the age is between 20 and 29 (both included) print Twenties
+Given the age of three people A B C (all different) Print the names in descending order of age
+Given two numbers A and B print which is greater (Use ternary operator)
+Given the day in long format like "Monday", "Tuesday" ... print in short format "Mon", "Tue"
+
+
+JS Conditional Statements (YOU) Pending
+Problem
+
+Given two numbers A and B print which is larger
+Given two passwords print "Wrong Password" if both the passwords doesn't match. "Valid Password" if both the passwords are same.
+Given a number if it is odd print "Odd Number" other wise print "Even Number"
+Given the year of birth, if the age is between 13 and 19 (both included) print Teenage and in between 20 and 29 (both included) print Twenties
+Given the age of three people A B C (all different) Print the names in descending order (First Line) ascending order (Second Line)
+Given two numbers A and B print "Equal" if both are equal otherwise print "Different" (Use ternary operator)
+Given the month in long format like "January", "February" ... print in short format "Jan", "Feb"
+
+
+Leap Year Check Pending
+Problem
+
+If the given year is a leap year print "LEAP YEAR" and if it's not a leap year print "NOT LEAP YEAR"
+
+Code File
+Submission Image/Video Instructions
+Screenshot showing the output for the years 2012 and 2014
+
+
+
+
+Character Vowel Check Submitted
+Problem
+Give a single character (small or upper case) if it is a Vowel print "V" in the case of consonant print "C"
+
+Code file
+Submission Image/Video Instructions
+Screenshot of the output for the characters A, u, N, w
+
+
+
+
+Voting Rights Submitted
+Problem
+In India, a person can vote if he crossed 18years of age. Give a person year of birth print "YES" if he can vote otherwise print "NO"
+
+Code File
+Submission Image/Video Instructions
+Screenshot of the output for the years 1992 and 2006
+
+
+Valid String Picode Pending
+Problem
+Give a string of PIN Code (with all digits) print "VALID" or "INVALID" (a PIN code is only valid if it has 6 digits)
+
+Code File
+Submission Image/Video Instructions
+Screenshot of the output for the following PIN Codes 1234, 560095, 8012034
+
+
+Indian State Region Submitted
+Problem
+Based on the state print the region it belongs to "EAST", "WEST", "NORTH", "SOUTH"
+
+Code File
+Submission Image/Video Instructions
+Screenshot of the output for Kerala, Gujarat, Assam, Haryana
+
+
+
+
+Driving Age Check Submitted
+Problem
+Based on the below-mentioned conditions print the statements
+
+If the user is older than 18 print You can drive in India!
+If the user is younger than 18 print You can't drive in India!
+If the user is exactly 18 years old print You are just old enough to drive in India!
+Code Check
+Submission Image/Video Instructions
+Screenshot showing the output for the age 15, 18 and 22
+
+
+
+Coupon Discount Calculator Submitted
+Problem
+Calculate the total discount for a coupon based on the below conditions To attract customers, you are giving a discount. You want to give 10% of the total sale price. But you have also said that Rs. 100 is the maximum discount that a customer can get. The minimum you need to purchase is Rs. 300.
+
+Code file
+Submission Image/Video Instructions
+Screenshot of the output for the following sale prices 1500, 500, 250
+
+
+
+
+BMI Calculator Report Submitted
+Problem
+Based on the height and weight of a person calculate the BMI and print the following messages based on the below criteria
+
+below 18.5 – you're in the underweight range
+between 18.5 and 24.9 – you're in the healthy weight range
+between 25 and 29.9 – you're in the overweight range
+between 30 and 39.9 – you're in the obese range
+Submission Image/Video Instructions
+Screenshot of the output for inputs falling into each criterion
+
+
+
+
+
+
+Country Continent Submitted
+Problem
+a variable country can have any of the following names.
+
+India
+United States of America
+China
+Nepal
+Australia
+France
+Germany
+South Africa
+Nigeria
+Mexico
+Argentina
+Brazil
+Canada
+Singapore
+Sweden
+You should return the proper continent based on the input. Eg: If the country is India -> Asia
+If the country is Argentina -> South America
+
+This link https://simple.wikipedia.org/wiki/List_of_countries_by_continents shows you the continents for each country if you are unsure.
+
+Code File
+Submission Image/Video Instructions
+Screenshot of the output for the countries Brazil and Mexico
+
+
+
+
+
+
+
+
+
+
+JS Operators & Conditional Statements
+Even Odd Submitted
+Problem
+Given a number print if it is either "EVEN" or "ODD" (Use ternary Operators)
+
+Code File
+Submission Image/Video Instructions
+Screenshot of the output for 23, 88
+
+
+
+
+
+Compare Numbers Submitted
+Problem
+Given two numbers a, b Print the below statements based on the condition
+
+"A > B"
+"A < B"
+"A = B" Note: Use Ternary Operators
+Code file
+Submission Image/Video Instructions
+Screenshot of the output for the values (20, 40), (19, -6), (12, 12)
+
+
+
+
+
+
+Shirt Sizes Submitted
+Problem
+Given the shirt size code "S", "M", "L", "XL" print the corresponding names "Small", "Medium", "Large", "Extra Large", "None" (For not a valid code)
+
+Code File
+Submission Image/Video Instructions
+Screenshot of the output for "XS", "M", "XL"
+
+
+

@@ -1,0 +1,282 @@
+<html>
+    <head>
+        <title>Unix</title>
+        <style>
+          #top-box{
+            background-color: grey; 
+            height: 300px; 
+            width: 400px; 
+            margin:10px auto 40px; 
+            padding: 10px;
+          }
+          #top-img-div{
+            margin: auto; 
+            width: 100px;
+          }
+          #img1{
+            width: 100px;
+          }
+          #top-h1{
+            color: blue; text-align: center;
+          }
+          #top-p{
+            font-size: 24px; text-align: center;
+          }
+
+          #mid{
+            width: 1000px; margin:auto;
+          }
+          #mid-div-img{
+            float: left;
+          }
+          #img2{
+            height: 160px;
+          }
+          #mid-div2{
+            float: left; 
+            margin-left:30px; 
+            width: 700px;
+          }
+          #mid-h1{
+            color: red;
+          }
+          #mid-p{
+            font-size: 20px;
+          }
+
+          #bottom{
+            margin-top: 10px;
+          }
+          #bottom-div{
+            background-color: chocolate; width: 1300px; margin: auto; padding: 20px;
+          }
+          #bottom-div-left{
+            float: left;
+          }
+          #bottom-div-left-h2{
+            color: white;
+          }
+          #bottom-div-left-p{
+            font-size: 18px;
+          }
+          #bottom-div-line{
+            background-color: black; 
+            height: 150px; 
+            width: 8px; 
+            float: left; 
+            margin-left: 240px;
+          }
+          #bottom-div-right{
+            float: right;
+          }
+          #bottom-div-right-h2{
+            color:white; 
+            text-align: right;
+          }
+          #bottom-div-right-p{
+            font-size: 19px;
+          }
+
+          .clear{
+            clear: both;
+          }
+
+        </style>
+    </head>
+    <body>
+       <button>Create Page</button>
+    </body>
+
+    <script>
+      var btn = document.querySelector('button');
+
+      //body
+      var body = document.body;
+      //container
+      var cont = document.createElement('div');
+      //top
+      var topL = document.createElement('div');
+      var topBox = document.createElement('div');
+      var topImgDiv = document.createElement('div');
+      var img1 = document.createElement('img');
+      var topH1 = document.createElement('h1');
+      var topP1 = document.createElement('p');
+
+      // console.log(topH1);
+      // console.log(topP1);
+      // console.log(topL);
+
+
+
+      //setting Attribute
+        img1.setAttribute('id','img1');
+        img1.setAttribute('src','https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/linus.jpg');
+
+        topH1.setAttribute('id','top-h1')
+        topP1.setAttribute('id','top-p')
+
+        topImgDiv.setAttribute('id','top-img-div');
+        topBox.setAttribute('id','top-box');
+        
+        topL.setAttribute('id','top');
+        cont.setAttribute('id','cont');
+
+
+
+
+      //Creating middile
+
+      var mid = document.createElement('div');
+      var midDivImg = document.createElement('div');
+      var img2 = document.createElement('img');
+
+      var midDiv2 = document.createElement('div');
+
+      var midH1 = document.createElement('h1');
+      var midP = document.createElement('p');
+
+      var clear1 = document.createElement('div');
+
+      //settig Attribute
+
+      mid.setAttribute('id','mid');
+      midDivImg.setAttribute('id','mid-div-img');
+      img2.setAttribute('id','img2');
+      img2.setAttribute('src','https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/khan.jpg');
+
+      midDiv2.setAttribute('id','mid-div2');
+      midH1.setAttribute('id','mid-h1');
+      midP.setAttribute('id','mid-p');
+
+      clear1.setAttribute('class','clear');
+
+
+
+      //Creating Bottom
+
+      var bottomL = document.createElement('div');
+      var bottomDiv = document.createElement('div');
+      var bottomDivLeft = document.createElement('div');
+      var bottomDivLeftH2 = document.createElement('h2');
+      var bottomDivLeftP = document.createElement('p'); 
+
+      var bottomDivLine = document.createElement('div');
+
+      var bottomDivRight = document.createElement('div');
+      var bottomDivRightH2 = document.createElement('h2');
+      var bottomDivRightP = document.createElement('p');  
+
+      var clear2 = document.createElement('div');
+
+      //Setting bottom Attribute
+
+      bottomL.setAttribute('id','bottom');
+      bottomDiv.setAttribute('id','bottom-div');
+      bottomDivLeft.setAttribute('id','bottom-div-left');
+      bottomDivLeftH2.setAttribute('id','bottom-div-left-h2');
+      bottomDivLeftP.setAttribute('id','bottom-div-left-p');
+
+      bottomDivLine.setAttribute('id','bottom-div-line');
+
+      bottomDivRight.setAttribute('id','bottom-div-right');
+
+      bottomDivRightH2.setAttribute('id','bottom-div-right-h2');
+      bottomDivRightP.setAttribute('id','bottom-div-right-p');
+
+      clear2.setAttribute('class','clear');
+
+      // function clean(){
+      //   cont.remove();
+      //   btn.textContent = "Create Page"
+      // }
+
+       var i = 0; 
+      function createPage(){
+
+        if( i % 2 == 0){
+
+        
+          //Top
+          topH1.textContent = "Linus Torvalds";
+          topP1.textContent = "The creator of Linux & Git";
+
+          topImgDiv.appendChild(img1);
+
+          topBox.appendChild(topImgDiv);
+          topBox.appendChild(topH1);
+          topBox.appendChild(topP1);
+
+          topL.appendChild(topBox);
+
+          cont.appendChild(topL);
+
+
+          // console.log(topL);
+          // Middle
+
+          midH1.textContent = 'Sal Khan';
+          midP.textContent = 'Salman Khan is the founder of the Khan Academy whuch has a mission of providing a free world-class education for anyone, anywhere.';
+
+          midDiv2.appendChild(midH1);
+          midDiv2.appendChild(midP);
+
+          midDivImg.appendChild(img2);
+
+          mid.appendChild(midDivImg);
+          mid.appendChild(midDiv2);
+          mid.appendChild(clear1);
+
+          cont.appendChild(mid);
+          // console.log(mid);
+
+
+
+          //Bottom
+          bottomDivLeftH2.textContent = "Ken Thompson";
+          bottomDivLeftP.textContent = "Designed and implemented the original Unix operating system";
+
+          bottomDivRightH2.textContent = "Dennis Ritchie";
+          bottomDivRightP.textContent = "The creator of C Programming Language";
+
+
+          bottomDivLeft.appendChild(bottomDivLeftH2);
+          bottomDivLeft.appendChild(bottomDivLeftP);
+
+          bottomDivRight.appendChild(bottomDivRightH2);
+          bottomDivRight.appendChild(bottomDivRightP);
+
+          bottomDiv.appendChild(bottomDivLeft);
+          bottomDiv.appendChild(bottomDivLine);
+          bottomDiv.appendChild(bottomDivRight);
+          bottomDiv.appendChild(clear2);
+
+          bottomL.appendChild(bottomDiv);
+
+          cont.appendChild(bottomL);
+
+          body.appendChild(cont);
+
+        
+        // console.log(cont);
+        
+        btn.textContent = "clean";
+        }
+        else {
+          cont.innerHTML = "";
+          btn.textContent = "Create Page";
+        }
+
+        i++
+        console.log(i);
+      }
+
+      btn.addEventListener('click',createPage);
+
+      
+
+    </script>
+
+
+
+
+</html>

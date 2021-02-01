@@ -1,0 +1,123 @@
+Javascript Functions (IW):
+
+Notes
+Given a number write a function to find if it is divisible by 3
+Use the function in the above statement to print the multiples of 3 till given limit
+Given a single character in lower case convert to upper case (Don't use inbuilt functions)
+Write a function to check if a number is a prime
+Given a array of numbers find how many times the maximum value occurs
+Given a string remove the vowels from the string
+
+
+
+
+
+
+JS Functions (WE) Pending
+Problem
+Given a number write a function to find if it is divisible by 5
+Use the function in the above statement find the sum of multiples of 5 till the given limit
+Given a single character in upper case convert to lower case (Don't use inbuilt functions)
+Write a function to check if a number is not a prime
+Given an array of numbers find how many times the minimum value occurs
+Given a string remove the consonants from the string
+
+
+
+
+
+
+
+
+JS Functions (YOU) Pending
+Problem
+Given a number write a function to find if it is divisible by 7
+Use the function in the above statement find the average of multiples of 7 till the given limit
+Given a word in upper case convert to lower case (Don't use inbuilt functions)
+Write a function to remove even numbers from the given array of numbers
+Given an array of numbers find how many times the minimum and maximum value occurs
+Given a string remove a given character from the string
+
+
+
+
+
+
+Add Numbers Pending
+Problem
+Write a function named addNumbers which takes two numbers as input and return their sum
+Use the function to calculate the sum of given three numbers
+Submission Image/Video Instructions
+Screenshot of the program for the numbers (12, 85, 23), (-18, 34, 52), (-8, -4, -21)
+
+
+
+
+
+Absolute Difference Pending
+Problem
+Write a function to find the absolute difference of two numbers
+Sample Input-1 12,4
+Sample Output-1 8
+Sample Input-2 4,18
+Sample Output-2 14
+Submission Image/Video Instructions
+Screenshot of the output for the values (100, 32), (64, 128), (-4, 8), (-24, -56)
+
+
+
+
+
+
+
+
+isOdd Check Pending
+Problem
+Write a function isOdd which returns a boolean value based the number is odd or not
+Use this function to print the odd numbers from 0 to a given limit(included)
+Submission Image/Video Instructions
+Screenshot of the program for the limits 50, 25
+
+
+
+
+Array Average Pending
+Problem
+Write a function to calculate the average of an array
+If there are no items in the array it should return 0
+Submission Image/Video Instructions
+Screenshot of the output for the arrays [], [1, 2, 3, 4, 5], [-12, -39, 12, 41, 22, 44]
+
+
+
+
+
+
+
+Word to lower case Pending
+Problem
+Write a function to convert a character to lower case
+Use this function to convert a given word to lower case
+Submission Image/Video Instructions
+Screenshot of the output for the words HELLO, masai, MiXeD
+
+
+
+
+
+
+
+
+
+
+
+Mirror Image Pending
+Problem
+Print the mirror image of the given lowercase string ayzb should become zbay
+Note: mirror image does not mean reverse (The mirror image of a is z, b is y, c is x ...)
+Submission Image/Video Instructions
+Screenshot of the output for the strings stdin script cmd zebra
+
+
+
+

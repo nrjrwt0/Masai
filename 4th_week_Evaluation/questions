@@ -1,0 +1,243 @@
+Sum Them
+Description
+
+You are given an array of N elements. Your task is to write a program that calculates sum of all the alternate elements starting from 2nd element of the array (index 1 of array).
+
+
+Input
+Input Format :
+
+First line contains N
+
+Second line contains N space separated integers
+
+
+
+Constraints :
+
+N<1000
+
+
+Output
+Output the sum under given condition
+
+
+Sample Input 1 
+
+5
+3 5 0 9 8
+Sample Output 1
+
+14
+
+
+
+
+
+
+
+
+
+
+
+
+
+Till 42!
+Description
+
+You are given N numbers. Your task is to write a program that calculates sum of all elements in the provided numbers (only as long as 42 is encountered & including 42).
+
+See sample test case for better explanation.
+
+
+Input
+Input Format:
+
+First line contains N
+
+Second line contains N space separated integers.
+
+Constraints:
+
+N<10000
+
+
+Output
+Output the sum of all elements present till 42 (including 42)
+
+
+Sample Input 1 
+
+7
+23 32 1 0 -32 42 8
+Sample Output 1
+
+66
+
+
+
+
+
+
+
+
+
+
+
+
+Compete with Neighbour
+Description
+
+You are provided an array A which has N elements. Your task is to find the count of such occurrence where the element is larger than its neighbour.
+
+
+Input
+Input Format :
+
+First line of input contains N which is the number of elements present in the array.
+
+Second line contains N integer which are the elements of the array A.
+
+Constraints :
+
+N<100
+
+There will always be at least 2 elements
+
+
+Output
+Output one integer which is the count of such occurences.
+
+
+Sample Input 1 
+
+8
+1 2 3 4 2 1 6 5
+Sample Output 1
+
+2
+
+
+
+
+
+
+
+
+
+
+Units Consumed
+Description
+
+Electricity consumption is measured via slab rates for a particular wattage capacity, which is as follows
+
+test.png
+
+Apart from the slab rates, a fixed charge of Rs. 80 is also added to every bill.
+
+Given the bill, write a program to find the number of units consumed.
+
+
+Input
+Input Format:
+
+First and the only line of input contains the bill amount
+
+Constraints:
+
+Bill amount is an integer <= 1000
+
+
+Output
+Output the number of units consumed
+
+
+Sample Input 1 
+
+930
+Sample Output 1
+
+170
+
+
+
+
+
+
+
+
+
+
+
+Find Sum of Multiples
+Description
+
+You are given three integers: n, k , y
+
+You have to print sum of first k multiples of n which are multiple of y as well.
+
+
+Input
+Input Format :
+
+The input line contains 3 spaced integers which are n, k and y.
+
+
+
+Constraints :
+
+1 <= n <= 1000
+
+1 <= y <= 1000
+
+1<= k <= 10^4
+
+
+Output
+Output the number which is sum of multiples of given integers.
+
+
+Sample Input 1 
+
+3 10 5
+Sample Output 1
+
+45
+
+
+
+
+
+
+
+
+
+
+Motu to Potlu house
+Description
+
+Motu decided to visit his friend Potlu. It turned out that the Motu's house is located at point 0 and his friend's house is located at point x (x > 0) of the coordinate line. In one step the Motu can move 1, 2, 3, 4 or 5 positions forward.
+
+Determine, what is the minimum number of steps he need to make in order to get to his friend's house.
+
+
+Input
+Input Format :
+
+First and the only line contain the integer n which denotes the position of his friend's house.
+
+Constraints :
+
+1 <= n <= 10^6
+
+
+Output
+Output contains a single line denoting the minimum number of steps.
+
+
+Sample Input 1 
+
+26
+Sample Output 1
+
+6

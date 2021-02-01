@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Code You</title>
+  <style type="text/css">
+    .flex{
+      display: flex;
+    }
+    .flex > div {
+      background-color: teal;
+      flex-basis: 120px;
+      margin: 20px;
+      height: 120px;
+      border-radius: 10px;
+    }
+
+    #layout2{
+      display: grid;
+      gap: 20px;
+      width: 50%;
+      margin: auto;
+      grid-template-columns :100px 100px 100px 100px;
+      grid-template-rows :100px 100px 100px;
+    }
+    #layout2 > div{
+      background-color: teal;
+      border-radius: 10px;
+    }
+    #layout2 > div:nth-child(2){
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+     #layout2 > div:nth-child(4){
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    #layout2 > div:nth-child(9){
+      grid-column-start: 3;
+      grid-column-end: 5;
+    } 
+
+
+    #layout3{
+      display: grid;
+      gap: 20px;
+      grid-template: "a a a a"
+      "b b b c"
+      "b b b d"
+      "b b b e";
+    }
+    #nav{
+      height: 50px;
+      background: yellow;
+      grid-area:a;
+    }
+    #left{
+      height: 320px;
+      background: red;
+      grid-area:b;
+    }
+    .right{
+      height: 90px;
+      background: blue;
+      
+    }
+    #right1{
+      grid-area:c;
+    }
+    #right2{
+      grid-area:d;
+    }
+    #right3{
+      grid-area:e;
+    }
+/* Medium devices (landscape tablets, 768px and up) */
+@media (max-width: 768px) {
+  #layout3{
+      grid-template: "a a a "
+      "b b b "
+      "c d e";
+    }
+} 
+ /* Extra small devices (phones, 600px and down) */
+ @media(max-width: 600px) {
+    #layout3{
+      grid-template: "a"
+      "b"
+      "c"
+      "d"
+      "e";
+    }
+} 
+
+  </style>
+</head>
+<body>
+  <div id="layout1">
+    <div class="flex">
+      <div></div>
+    </div>
+    <div  class="flex">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="flex">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="flex">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <div id="layout2">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+
+  <div id="layout3">
+    <div id="nav"></div>
+    <div id="left"></div>
+    <div class="right" id="right1"></div>
+    <div class="right" id="right2"></div>
+    <div class="right" id="right3"></div>
+  </div>
+</body>
+</html>

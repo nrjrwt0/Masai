@@ -1,0 +1,121 @@
+Pyramid Play Submitted
+Problem
+File pyramidPlay.js
+print a pyramid or a rhombus of different heights
+Should have three functions to print the pyramid , inverse pyramid and rhombus based on the given level
+Level and shape will be given
+Sample Inputs
+
+example 1:
+4 pyramid
+
+example 2:
+4 inverse_pyramid
+
+example 3:
+4 rhombus 
+Sample Outputs:
+
+example 1:
+....O....
+...O.O...
+..O.O.O..
+.O.O.O.O.
+
+example 2:
+.O.O.O.O.
+..O.O.O..
+...O.O...
+....O....
+
+example 3:
+....O....
+...O.O...
+..O.O.O..
+.O.O.O.O.
+..O.O.O..
+...O.O...
+....O....
+
+
+
+
+
+
+
+
+Adjacent Encryption Submitted
+Problem
+Given a string in lower case, encrypt the string by changing it to next character (in case of z it becomes a)
+Sample Input - abyz
+Sample Output - bcza
+Submission Image/Video Instructions
+Screenshot of the output for the string zyfqwxaeiou
+
+
+
+
+
+
+
+
+Grade Student Marks Submitted
+Problem
+Given an object of student grades and their marks in the mentioned below format, print the highest scored student for each grade along with the total
+Sample Input
+[
+  {
+      grade: "V",
+      students: [
+          {name: "Nrupul", marks: [10, 20, 30]},
+          {name: "Prateek", marks: [20, 30, 40]}
+      ]
+  },
+  {
+      grade: "VI",
+      students: [
+          {name: "Aman", marks: [10, 20, 30]},
+          {name: "Albert", marks: [20, 30, 40]}
+      ]
+  },
+  {
+      grade: "VII",
+      students: [
+          {name: "Yogesh", marks: [10, 20, 30]},
+          {name: "Sandhya", marks: [20, 30, 40]}
+      ]
+  }
+]
+Sample Output
+V-Prateek-90
+VI-Albert-90
+VII-Sandhya-90
+
+
+
+
+
+
+
+
+Email (Tables) Submitted
+Problem
+Build the given layout using tables and below-mentioned style properties
+
+`color`
+`width`
+`height`
+`text-align`
+`background`
+`font-size`
+Create a file called email.html
+The layout should look like the given template https://masai-course.s3.ap-south-1.amazonaws.com/resources/templates/html/email_template.png
+Image Links
+https://placehold.it/548x200
+https://placehold.it/170x129
+Submit the email.html file
+
+
+
+
+

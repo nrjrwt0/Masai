@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zig Zag</title>
+  <style type="text/css">
+    .flex{
+      display: flex;
+    }
+    .flex > div {
+      height: 200px;
+      background-color: teal;
+      flex-basis: 200px;
+      margin: 20px;
+      border-radius: 10px;
+    }
+    #first > div:nth-child(2), #second > div:nth-child(1), #third > div:nth-child(3){
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <div id="first" class="flex">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div id="second" class="flex">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div id="third" class="flex">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+</html>

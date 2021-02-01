@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hindu Layout</title>
+  <style type="text/css">
+    #cont{
+      display: grid;
+      gap: 25px;
+      margin: 10px;
+      grid-template: "big small2"
+      "big small3"
+      "big small4"
+      "small1 small5";
+    }
+    #big{
+      grid-area: big;
+      background-color:skyblue;
+      /* max-width: ; */
+      /* height:400px; */
+    }
+    #big > div > img{
+      max-width: 100%;
+      min-width: 100%;
+    }
+    #big > div:nth-child(2){
+      margin-left: 10px;
+    }
+    #big ~ div {
+      background-color:silver;
+      padding: 10px;
+    }
+    #big ~ div > img {
+      float: left;
+      margin-right: 10px;
+    }
+    #cont > div:nth-child(2){
+      grid-area: small1;
+
+    }
+    #cont > div:nth-child(3){
+      grid-area: small2;
+    }
+    #cont > div:nth-child(4){
+      grid-area: small3;
+    }
+    #cont > div:nth-child(5){
+      grid-area: small4;
+    }
+    #cont > div:nth-child(6){
+      grid-area: small5;
+    }
+    @media (max-width: 768px){
+      #cont{
+      grid-template: "big big"
+      "big big"
+      "big big"
+      "small1 small2"
+      "small3 small4";
+    }
+    #cont > div:nth-child(6){
+      display: none;
+    }
+  }
+  @media (max-width: 600px){
+      #cont{
+      grid-template: "big"
+      "big"
+      "big"
+      "small1"
+      "small2"
+      "small3"
+      "small4"
+      "small5";
+    }
+    #cont > div:nth-child(6){
+      display: block;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div id="cont">
+    <div id="big">
+      <div>
+        <img src="https://placehold.it/440X120">
+      </div>
+      <div>
+        <h2>Ahmedabad joint rally with Trump will be historic, says Modi</h2>
+        <h5>KALLOL BHATTACHERJEE</h5>
+        <h5>SUHASINI HAIDAR</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptates officiis?</p>
+      </div>  
+    </div>
+    <div >
+      <img src="https://placehold.it/100">
+      <h3>NATIONAL</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, totam!</p>
+    </div>
+    <div >
+      <img src="https://placehold.it/100">
+      <h3>THE HUDDLE</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, totam!</p>
+    </div>
+    <div >
+      <img src="https://placehold.it/100">
+      <h3>NATIONAL</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, totam!</p>
+    </div>
+    <div >
+      <img src="https://placehold.it/100">
+      <h3>NATIONAL</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, totam!</p>
+    </div>
+    <div>
+      <img  src="https://placehold.it/100">
+      <h3>THE HUDDLE</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, totam!</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    html,body,#cont{
+      height: 100%;
+      width: 100%;
+    }
+    #wrapper{
+      width: 90%;
+      margin: auto;
+    }
+    #scolarship{
+      display: flex;
+      justify-content: space-around;
+      padding-top: 20px;
+      padding-bottom: 60px;
+      background-color:#F8F9FF;
+      margin-bottom: 20px;
+    }
+
+    .box{
+      display: flex;
+      flex-basis: 28%;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .box1{
+      background-color:#F1C318 ;
+    }
+    .box2{
+      background-color:#365ED8 ; 
+    }
+    .box3{
+      background-color:#00C4DC ;
+    }
+    .box > div{
+      margin: 8px;
+    }
+
+    #mid{
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #mid > div{
+      display: flex;
+      width: 50%;
+      margin:10px auto;
+      justify-content: space-around;
+      background-color: #F8F9FF;
+      border-radius: 10px;
+    }
+    #mid > div > p{
+      padding: 8px;
+      border-radius: 10px;
+    }
+    #mid > div > p:first-child{
+      background-color:#00C4DC ;
+      
+    }
+
+    #programs{
+      display: grid;
+      margin: 20px 40px;
+      gap: 5%;
+      grid-template-areas: "a b c";
+      /* border: 1px solid red; */
+    }
+    .program{
+      /* border: 1px solid red; */
+      background-color: #F8F9FF;
+    }
+    #programs > div > img{
+      max-width: 100%;
+      min-width: 100%;
+    }
+    #programs > div > div{
+      margin: 10px;
+    }
+    #programs > div > div > p {
+      color:grey;
+      margin: 15px 0px;
+    }
+    #programs button{
+      background-color: #F8F9FF;
+      padding: 10px;
+      margin-top: 15px;
+      border-radius: 5px;
+      border-color:#00C4DC ;
+    }
+    .program1{
+      grid-area: a;
+    }
+    .program2{
+      grid-area: b;
+    }
+    .program3{
+      grid-area: c;
+    }
+    @media (max-width: 768px) {
+      #programs{
+        grid-template-areas: "a b"
+        "c d";
+      }
+    }
+    @media(max-width: 600px) {
+      #programs{
+        grid-template-areas: "a"
+        "b"
+        "c";
+        }
+        #mid > div{
+          flex-direction: column;
+        }
+    } 
+  </style>
+</head>
+<body>
+  <div id="cont">
+    <div id="wrapper">
+      <div id="scolarship">   
+        <div class="box box1">
+          <img src="https://placehold.it/60">
+          <div>
+            <h3>Scolarship</h3>
+            <h4>Available</h4>
+          </div>
+        </div>
+
+        <div class="box box2">
+          <img src="https://placehold.it/60">
+          <div>
+            <h3>Scolarship</h3>
+            <h4>Available</h4>
+          </div>
+        </div>
+
+        <div class="box box3">
+          <img src="https://placehold.it/60">
+          <div>
+            <h3>Scolarship</h3>
+            <h4>Available</h4>
+          </div>
+        </div>
+      </div>
+
+        <div id="mid">
+          <h1>Popular Program</h1>
+          <div>
+            <p>Graduate</p>
+            <p>PostGraduate</p>
+            <p>PHD Scolarship</p>
+            <p>Training</p>
+          </div>
+        </div>
+
+        <div id="programs">
+            <div class="program program1">
+              <img src="https://placehold.it/350x250">
+              <div>
+              <p>Agriculture</p>
+              <h2>Chemical Engineering</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error ad quam amet minus, quod magni iure.</p>
+              <button>APPLY NOW</button>
+              </div>
+            </div>
+
+            <div class="program program2">
+              <img src="https://placehold.it/350x250">
+              <div>
+              <p>Agriculture</p>
+              <h2>Mechanical Engineering</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error ad quam amet minus, quod magni iure.</p>
+              <button>APPLY NOW</button>
+              </div>
+            </div>
+
+            <div class="program program3">
+              <img src="https://placehold.it/350x250">
+              <div>
+              <p>Agriculture</p>
+              <h2>Bio Engineering</h2>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error ad quam amet minus, quod magni iure.</p>
+              <button>APPLY NOW</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

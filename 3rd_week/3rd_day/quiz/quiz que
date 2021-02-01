@@ -1,0 +1,532 @@
+* {
+    color: yellow;
+    font-size: 12px;
+}
+div {
+    height: 100px;
+    width: 100px;
+    margin: 6px;
+    padding: 4px;
+    background-color: black;
+    color: white;
+}
+#id3 {
+    font-size: 14px;
+    margin-left: 10px;
+    color: blue;
+}
+.class3 {
+    height: 200px;
+    color: red;
+    padding-right: 20px;
+    margin-left: 15px;
+}
+.class5 {
+    height: 100px;
+    margin: 6px;
+    background-color: black;
+}
+<div class="class5 class3" id="id3" style="color:orange; font-size:28px; margin:20px">MASAI</div>
+Fill the below property values for the div
+
+Background Color
+Height
+Margin-Left
+Padding-Right
+Font-Size
+Color
+Your Answer
+black 100px 20px 20px 28px orange
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    color: yellow;
+    font-size: 12px;
+}
+div {
+    height: 100px;
+    width: 100px;
+    margin: 6px;
+    padding: 4px;
+    background-color: black;
+    color: white;
+}
+<div style="height:50px;">MASAI</div>
+Fill the below property values for the div
+
+Width
+Height
+Padding
+Your Answer
+100px 50px 4px
+
+
+
+
+
+
+
+
+
+* {
+    color: yellow;
+    font-size: 12px;
+}
+div {
+    height: 100px;
+    width: 100px;
+    margin: 6px;
+    padding: 4px;
+    background-color: black;
+    color: white;
+}
+<div>MASAI</div>
+Fill the below property values for the div
+
+Color
+Height
+Your Answer
+white 100px
+
+
+
+
+
+
+
+
+
+* {
+    color: yellow;
+    font-size: 12px;
+}
+div {
+    height: 100px;
+    width: 100px;
+    margin: 6px;
+    padding: 4px;
+    background-color: black;
+    color: white;
+}
+#id1 {
+    height: 50px;
+    color: red;
+}
+#id2 {
+    width: 75px;
+    margin: 10px;
+}
+#id3 {
+    font-size: 14px;
+    margin-left: 10px;
+    color: blue;
+}
+.class1 {
+    background-color:white;
+    color: black;
+    font-size: 16px;
+}
+.class4 {
+    color: purple;
+    background-color: red;
+}
+<div class="class1 class4" style="color:violet">MASAI</div>
+Fill the below property values for the div
+
+Width
+Background Color
+Padding-Bottom
+Margin-Right
+Font-Size
+Color
+Your Answer
+100px red 4px 6px 16px violet
+
+
+
+
+
+
+
+
+
+* {
+    color: yellow;
+    font-size: 12px;
+}
+div {
+    height: 100px;
+    width: 100px;
+    margin: 6px;
+    padding: 4px;
+    background-color: black;
+    color: white;
+}
+#id2 {
+    width: 75px;
+    margin: 10px;
+}
+.class2 {
+    font-size: 22px;
+    width: 150px;
+}
+#id2 {
+    font-size: 20px;
+    margin-right: 20px;
+    background-color: red;
+}
+.class2 {
+    height: 50px;
+    color: black;
+}
+<div class="class2" id="id2">MASAI</div>
+Fill the below property values for the div
+
+Width
+Height
+Padding-Top
+Margin-Bottom
+Font-Size
+Color
+Your Answer
+75px 50px 4px 10px 20px black
+
+
+
+
+
+
+
+
+* {
+    color: yellow;
+    font-size: 12px;
+}
+div {
+    height: 100px;
+    width: 100px;
+    margin: 6px;
+    padding: 4px;
+    background-color: black;
+    color: white;
+}
+#id2 {
+    width: 75px;
+    margin: 10px;
+}
+#id2 {
+    font-size: 20px;
+    margin-right: 20px;
+    background-color: red;
+}
+<div id="id2">MASAI</div>
+Fill the below property values for the div
+
+Width
+Height
+Background Color
+Margin-Right
+Font-Size
+Color
+Your Answer
+75px 100px red 20px 20px white
+
+
+
+
+
+
+
+
+* {
+    color: yellow;
+    font-size: 12px;
+}
+div {
+    height: 100px;
+    width: 100px;
+    margin: 6px;
+    padding: 4px;
+    background-color: black;
+    color: white;
+}
+#id3 {
+    font-size: 14px;
+    margin-left: 10px;
+    color: blue;
+}
+.class2 {
+    font-size: 22px;
+    width: 150px;
+}
+.class5 {
+    height: 100px;
+    margin: 6px;
+    background-color: black;
+}
+.class2 {
+    height: 50px;
+    color: black;
+}
+.class4 {
+    color: purple;
+    background-color: red;
+}
+<div class="class2 class4 class5" id="id3" style="margin-left:22px">MASAI</div>
+Fill the below property values for the div
+
+Width
+Height
+Padding-Top
+Margin-Left
+Font-Size
+Color
+Your Answer
+150px 50px 4px 22px 14px blue
+
+
+
+
+
+
+
+
+* {
+    color: yellow;
+    font-size: 12px;
+}
+div {
+    height: 100px;
+    width: 100px;
+    margin: 6px;
+    padding: 4px;
+    background-color: black;
+    color: white;
+}
+#id2 {
+    width: 75px;
+    margin: 10px;
+}
+#id2 {
+    font-size: 20px;
+    margin-right: 20px;
+    background-color: red;
+}
+<div id="id2">MASAI</div>
+Fill the below property values for the div
+
+Color
+Background Color
+Padding-Bottom
+Margin-Top
+Font-Size
+Height
+Your Answer
+white red 4px 10px 20px 100px
+
+
+
+
+
+
+
+
+
+* {
+    color: yellow;
+    font-size: 12px;
+}
+div {
+    height: 100px;
+    width: 100px;
+    margin: 6px;
+    padding: 4px;
+    background-color: black;
+    color: white;
+}
+#id2 {
+    width: 75px;
+    margin: 10px;
+}
+.class3 {
+    height: 200px;
+    color: red;
+    padding-right: 20px;
+    margin-left: 15px;
+}
+.class5 {
+    height: 100px;
+    margin: 6px;
+    background-color: black;
+}
+#id2 {
+    font-size: 20px;
+    margin-right: 20px;
+    background-color: red;
+}
+<div class="class5 class3" id="id2">MASAI</div>
+Fill the below property values for the div
+
+Width
+Height
+Background Color
+Color
+Font-Size
+Your Answer
+75px 100px red red 20px
+
+
+
+
+
+
+
+
+
+* {
+    color: yellow;
+    font-size: 12px;
+}
+div {
+    height: 100px;
+    width: 100px;
+    margin: 6px;
+    padding: 4px;
+    background-color: black;
+    color: white;
+}
+.class2 {
+    font-size: 22px;
+    width: 150px;
+}
+.class4 {
+    margin-bottom: 20px;
+    font-size: 11px;
+}
+.class6 {
+    width: 100px;
+    padding-left: 6px;
+    padding-right: 8px;
+    color: orange;
+}
+.class2 {
+    height: 50px;
+    color: black;
+}
+.class4 {
+    color: purple;
+    background-color: red;
+}
+<div class="class4 class2 class6" style="font-size:20px">MASAI</div>
+Fill the below property values for the div
+
+Width
+Height
+Padding-Left
+Margin-Right
+Font-Size
+Color
+Your Answer
+100px 50px 6px 6px 20px purple
+
+
+
+
+
+
+
+
+
+* {
+    color: yellow;
+    font-size: 12px;
+}
+div {
+    height: 100px;
+    width: 100px;
+    margin: 6px;
+    padding: 4px;
+    background-color: black;
+    color: white;
+}
+#id1 {
+    height: 50px;
+    color: red;
+}
+.class3 {
+    height: 200px;
+    color: red;
+    padding-right: 20px;
+    margin-left: 15px;
+}
+.class5 {
+    height: 100px;
+    margin: 6px;
+    background-color: black;
+}
+<div class="class5 class3" id="id1">MASAI</div>
+Fill the below property values for the div
+
+Width
+Color
+Padding-Right
+Margin-Left
+Font-Size
+Background Color
+Your Answer
+100px red 20px 6px 12px black
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    color: yellow;
+    font-size: 12px;
+}
+div {
+    height: 100px;
+    width: 100px;
+    margin: 6px;
+    padding: 4px;
+    background-color: black;
+    color: white;
+}
+.class1 {
+    background-color:white;
+    color: black;
+    font-size: 16px;
+}
+<div class="class1">MASAI</div>
+Fill the below property values for the div
+
+Width
+Height
+Padding-Left
+Margin-Right
+Font-Size
+Color  
+
+Your Answer
+100px 100px 4px 6px 16px black
+
+

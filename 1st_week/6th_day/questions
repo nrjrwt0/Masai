@@ -1,0 +1,328 @@
+Notes
+Define a variable count Print "Masai School" using while loop the no of times the value assigned to the variable count
+Print the average of all the numbers from 1 to given limit
+Given two numbers left and right print the pattern shown below (Sample for input 3 and 5) ```
+1.1 1.2 1.3 1.4 1.5 2.1 2.2 2.3 2.4 2.5 3.1 3.2 3.3 3.4 3.5
+
+```
+
+Given an array of game, scores print the highest score
+Given an array of strings count the number of Vowels present
+
+
+
+
+
+
+Problem
+Define a variable limit Print "Masai School" using for loop the no of times the value assigned to the variable limit
+Print the sum of all the numbers starting from 0 to the given limit that are multiples of 3
+Given a number print the below set of pattern (Sample for input 3) ```
+1.1 2.1 2.2 3.1 3.2 3.3
+
+```
+
+Given an array of game, scores print the lowest score
+Given an array of strings count the number of Consonants present
+
+
+
+
+
+
+
+
+JS Loops, Arrays & Strings (YOU) Pending
+Problem
+Given a number using a while loop print if its a Prime Number or Not
+Print the average of all the numbers starting from 0 to the given limit that are multiples of 3
+Print the sum of all odd and even numbers separately from a given starting and ending limit
+Given an array of game, scores print the lowest and highest score
+Given a number using a for loop print if its a Prime Number or Not
+Given an array of strings count the number of Vowels and Consonants present
+
+
+
+
+
+
+
+
+
+
+
+
+
+While Descending Pending
+Problem
+Using a while loop print the numbers in descending order from the given starting to ending limit
+
+Start - 20 End - 25
+Output
+
+25
+24
+23
+22
+21
+20
+Submission Image/Video Instructions
+Screenshot of the output for the input starting from 16 to 24
+
+
+
+
+
+
+
+
+
+
+For Decreasing Stepper Pending
+Problem
+Given a staring number and a decrement value, print all numbers from the starting number till zero deducting the decrement value each time
+
+Starting - 13, Decrement - 4
+Output
+
+13
+9
+5
+1
+Code File
+Submission Image/Video Instructions
+Screenshot of the output for Starting - 29 and decrement - 6
+
+
+
+
+
+
+
+
+
+Print Versions 1.1.1 - 9.9.9 Pending
+Problem
+Pattern (Only part of it is show to get an understanding) ```
+1.1.1 1.1.2 . . 2.1.1 . . 9.9.8 9.9.9 ```
+
+Submission Image/Video Instructions
+Screenshot of the output
+
+
+
+
+
+
+
+
+
+
+
+Calculate Exponent Loops Pending
+Problem
+Given a number and the exponent factor (integer > 0) calculate the exponential value using loops
+
+Num - 2, Power - 4
+Output - 16
+
+Submission Image/Video Instructions
+Screenshot of the output for Num - 3 and Power - 5
+
+
+
+
+
+
+
+
+
+
+
+Prime Numbers Limit Pending
+Problem
+Print all the prime numbers till the given limit
+
+Limit - 13
+Output
+
+2
+3
+5
+7
+11
+13
+Code file
+Submission Image/Video Instructions
+Screenshot of the output for limit 100
+
+
+
+
+
+
+
+
+
+Print Odd Characters Pending
+Problem
+Given a string print all the Characters in the odd position (Start counting with 0)
+Input - Masai
+Output
+a
+a
+Submission Image/Video Instructions
+Screenshot of the output for the strings "Ubuntu", "Windows"
+
+
+
+
+
+
+
+
+
+
+
+Count Words Submitted
+Problem
+Given a sentence print the count of words (Separated by a space character)
+Input - "A Transformation In Education"
+Output - 4
+Submission Image/Video Instructions
+Screenshot of the output for "Java", "There is a smallest natural number"
+
+
+
+
+
+
+
+
+
+Check Palindrome Pending
+Problem
+Given a string print "YES" if it is a palindrome "NO" if it is not one
+A palindrome is a word which reads the same backward as forward, such as madam bob
+Submission Image/Video Instructions
+Screenshot of the output for "masai", "hannah"
+
+
+
+
+
+
+
+
+
+
+Number to Words Pending
+Problem
+Given a number covert it into word format
+Input 3987
+Output - Three Nine Eight Seven
+Submission Image/Video Instructions
+Screenshot of the output for the numbers 231, 95632, 7
+
+
+
+
+
+
+
+
+Array Sum Pending
+Problem
+Given an array of numbers print the sum of all the elements
+Sample Input - [1, 2, 3, 4, 5]
+Sample Output - 15
+Submission Image/Video Instructions
+Screenshot of the output for the array [34, -87, 23, 12, 98, -2, 0]
+
+
+
+
+
+
+
+Character Count Pending
+Problem
+Given an array or string print the total no of characters
+Sample Input - ["Hello", "Masai"]
+Sample Output - 10
+Submission Image/Video Instructions
+Screenshot of the output for the array ["HTML", "CSS", "JAVA", "JS", "ANDROID"]
+
+
+
+
+
+
+
+
+
+Odd Even Numbers Average Pending
+Problem
+Given an array of numbers print the average of all the odd numbers and even numbers
+Sample Input - [1, 4, 2, 3, 5, 6]
+Sample Output
+Odd Average - 3
+Even Average - 4
+Submission Image/Video Instructions
+Screenshot of the output for the array [34, -87, 23, 12, 98, -2, 0]
+
+
+
+
+
+
+
+
+
+Join Array Comma Pending
+Problem
+Given an array of string join them with a comma ,
+Sample Input - ["HTML", "CSS", "JAVA", "JS"]
+Sample Output - HTML,CSS,JAVA,JS
+Submission Image/Video Instructions
+Screenshot of the output for the following arrays ["Masai"] and ["Quick", "Brown", "Fox"]
+
+
+
+
+
+
+
+
+
+Reverse Array Pending
+Problem
+Print the given elements of an array in reverse order
+Sample Input - [2, 5, 8, 1, 4]
+Sample Output
+4
+1
+8
+5
+2
+Submission Image/Video Instructions
+Screenshot of the output for the array [90, 32, 51, 1, 56] , ["A", "E", "I", "O", "U"]
+
+
+
+
+
+
+
+
+
+
+
+
+Remove Small Words Pending
+Problem
+Given an array or strings, remove the items which have less than 4 characters length and print the array
+Sample Input - ["A", "Array", "For", "Removal"]
+Sample Output - ["Array", "Removal"]
+Submission Image/Video Instructions
+Screenshot of the output for the array ["A", "Quick", "Brown", "Fox", "Jumps", "Over", "A", "Lazy", "Dog"]

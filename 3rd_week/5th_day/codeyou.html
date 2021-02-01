@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Code You</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <style type="text/css">
+    #cont1{
+      width: 80vw;
+      margin:30px auto;
+      padding: 5px;
+    }
+    #cont1 div:first-child{
+      background-color: red;
+      width: 100%;
+      height: 80px;
+      border-radius: 10px;
+      margin-bottom: 60px;
+    }
+    #cont1 div:nth-child(2){
+      background-color: green;
+      width: 28%;
+      height: 70vh;
+      margin-right: 5%;
+      border-radius: 10px;
+      float: left;
+    }
+    #cont1 div:nth-child(3){
+      background-color: teal;
+      width: 67%;
+      height: 70vh;
+      border-radius: 10px;
+      float: left;
+    }
+    .clear{
+      clear: both;
+    }
+
+    #cont2{
+      margin: auto;
+      width: 80vw;
+    }
+    #cont2 > div{
+      background-color: teal;
+      width: 20vh;
+      height: 20vh;
+      margin: 1.5vh;
+      float: left;
+      border-radius: 10px;
+    }
+
+    #cont3  {
+      width: 95vw;
+      height: 95vh;
+      margin: auto;
+
+    }
+    #cont3 > div:first-child {
+      width: 30%;
+      padding: 10px;
+      margin: auto;
+      background-color: silver;
+      text-align: center;
+    }
+    #cont3 > div:first-child > div{
+      width: 30%;
+      margin:8px auto;
+    }
+    #cont3 > div:first-child h1,p{
+      font-family: 'Roboto', sans-serif;
+    }
+    #cont3 > div:first-child h1{
+      color: blue;
+    }
+    #cont3 > div:first-child p{
+      font-size: 20px;
+    }
+
+    #cont3 > div:nth-child(2){
+      width: 74vw;
+      margin:40px auto;
+      height: 20vh;
+      
+      
+    }
+    #cont3 > div:nth-child(2) > div{
+      width: 10%;
+      margin: auto;
+      float: left;
+    }
+    #cont3 > div:nth-child(2) > h1{
+      color: red;
+    }
+    #cont3 > div:nth-child(2) > p{
+      font-size: 18px;
+    }
+    #cont3 > div:last-child{
+      background-color: chocolate;
+      height: 20vh;
+      width: 80vw;
+      margin: auto;
+    }
+    #cont3 > div:last-child > div:first-child {
+      float: left;
+      width: 44%;
+      margin: 10px;
+    }
+    #cont3 > div:last-child > div:nth-child(2){
+      background-color:black;
+      margin: 10px 40px ;
+      width: 8px;
+      height: 80%;
+      float: left;
+    }
+    #cont3 > div:last-child > div:last-child {
+      float: right;
+      width: 44%;
+      margin: 10px;
+    }
+    #cont3 > div:last-child h1{
+      color: white;
+    }
+    #cont3 > div:last-child p{
+      font-size: 18px;
+    }
+    #cont3 > div:last-child > div:last-child h1, #cont3 > div:last-child > div:last-child p{
+      text-align: right;
+    }
+    #cont3 img {
+      max-width: 100px;
+      
+    }
+  </style>
+</head>
+<body>
+  <div id="cont1">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+<hr class="clear">
+  <div id="cont2">
+      <div></div>
+      <div class="clear"></div>
+      <div></div>
+      <div class="clear"></div>
+      <div></div>
+      <div></div>
+      <div class="clear"></div>
+      <div></div>
+      <div></div>
+      <div></div>
+  </div>
+  <hr class="clear">
+
+  <div id="cont3">
+    <div>
+      <div>
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/linus.jpg">
+      </div>
+      <h1>Linus Torvalds</h1>
+      <p>The creator of Linux & Git</p>
+    </div>
+    <div>
+      <div>
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/resources/images/khan.jpg">
+      </div>
+      <h1>Sal Khan</h1>
+      <p>Salman Khan is the founder of the Khan Academy which has a mission of providing a free world-class education for anyone, anywhere</p>
+    </div>
+
+    <div>
+      <div>
+        <h1>Ken Thompson</h1>
+        <p>Designed and Implemented the original Unix operating system</p>
+      </div>
+      <div></div>
+      <div>
+        <h1>Dennis Ritchie</h1>
+        <p>The creator of C Programming Language</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

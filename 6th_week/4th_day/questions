@@ -1,0 +1,38 @@
+Copy Data Types Submitted
+Problem
+Write a function to create a copy of an object without changing original object.
+Do the same with an array as well.
+
+
+
+
+Maths Play Submitted
+Problem
+Create an input box, checkbox/dropdown list of at least 3 Math methods we learned and a submit button.
+input box should accept only number. Show error on Submit if string is entered.
+Once the number is entered, allow user to choose a Math method to implement. You can use either dropdown or checkbox to show the options.
+with the provided option and number, show the ouput.
+for e.g number entered is 3.14 and Math method selected is Math.round(), output would be 3.
+remember, implement at least 3 Math methods and input should only accept a number
+
+
+
+
+
+
+String Check Submitted
+Problem
+create two input box and one submit button.
+First input box should accept a string and second input box another string/substring.
+on submit, check if original string contains the string entered in the other input box.
+For e.g input1= 'masai' and input2='asa', since its a valid substring, print true else print false
+
+
+
+
+Datatype Explanation Submitted
+Problem
+Create a 2-3 min video/screen recording of trying to mutate any one primitive data type and one non primitive data type.
+Explain the difference and why it works that way.
+
+

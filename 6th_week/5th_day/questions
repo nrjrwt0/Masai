@@ -1,0 +1,33 @@
+Random Number Webpage Submitted
+Problem
+Write a random number generator function between 1 to 100.
+If number is divisible by 3, show image of cat in center of webpage.
+If number is divisible by 5, show image of dog in center of webpage
+If number is divisible by both 3 and 5, show both images
+If no condition satisfies, change the background color to red.
+Submission Image/Video Instructions
+Video showcasing the demo
+
+
+
+
+
+Array Vowels Submitted
+Problem
+Make an array of 3 strings of your choice.
+find if each string contains at least one vowel (a,e,i,o,u)
+if all the strings contain at least one vowel, print true otherwise print false on console.
+
+
+
+
+Array Vowels Hoisting Submitted
+Problem
+Write a hoisted code representation for the code you wrote for Array Vowels
+
+
+
+Functions Call Stack Submitted
+Problem
+Write any 3-4 simple functions nested inside each other. Represent how a call stack would look for such execution. Can write down function and stack representation on a paper and submit the image.
+

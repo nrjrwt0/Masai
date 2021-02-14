@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masai Student</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #container{
+      height: 100vh;
+      width: 100vw;
+      background-image: url('https://d27028dliefpk3.cloudfront.net/static/welcome-banner/desktop/masai-intro.min.jpg');
+    }
+
+    nav{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: linear-gradient(to right, #681E21 , #AA060C);  
+      
+    }
+    nav > div{
+      /* border: 1px solid red; */
+      padding: 10px;
+    }
+    nav > ul{
+      padding: 10px;
+      width: 40%;
+      /* border: 1px solid red; */
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      font-size: 16px;
+    }
+    nav button{
+      padding: 10px 15px;
+      background-color: white;
+      color:#681E21;
+      font-size: 14px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    #wrapper{
+      /* border: 1px solid red; */
+      width:90%;
+      margin:100px auto;
+      display: flex;
+      /* flex-basis: 48%; */
+    }
+    form{
+      width: 48%;
+      /* border: 1px solid red; */
+      display: flex;
+      flex-direction: column;
+      
+    }
+    form > input{
+      padding: 10px 10px;
+      margin: 14px auto;
+      width: 60%;
+      font-size: 16px;
+      border-radius: 6px;
+      outline: none;
+    }
+    form > input[type="submit"]{
+      background: linear-gradient(to right, #681E21 , #AA060C); 
+      color: white;
+    }
+    form > p{
+      color: #AA060C;
+      font-size: 16px;
+      margin: 18px auto;
+    }
+    table{
+      border: 1px solid white;
+      margin:10px auto;
+      width: 48%;
+      /* border: 1px solid red; */
+      text-align: center;
+      color:  white;
+    }
+    #bold > td{
+      font-weight: bold;
+    }
+    table td{
+      border: 1px solid white;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <nav>
+      <div>
+        <img src="https://d27028dliefpk3.cloudfront.net/static/brand/MasaiLogo.svg" alt="">
+      </div>
+
+      <ul>
+
+        <li>
+          Courses
+        </li>
+
+        <li>
+          Fees & ISA
+        </li>
+
+        <li>
+          Hire Masai Grads
+        </li>
+
+        <li>
+          FAQ
+        </li>
+
+      </ul>
+
+      <div>
+        <button>Apply Now</button>
+      </div>
+    </nav>
+    <div id="wrapper">
+      <form>
+        <input required type="text" placeholder="Name">
+        <input required type="text" placeholder="Age">
+        <input required type="text" placeholder="City">
+        <input required type="text" placeholder="Mobile">
+        <input type="submit" id="btn">
+      </form>
+      <table>
+        <tr id="bold">
+          <td>NAME</td>
+          <td>AGE</td>
+          <td>CITY</td>
+          <td>MOBILE NO.</td>
+        </tr>
+        
+      </table>
+    </div>
+  </div>
+
+  <script>
+    var form = document.querySelector('form');
+    var table = document.querySelector('table');
+    var alldataArr = document.querySelectorAll('input'); 
+    var perror = document.createElement("p");
+
+    function dataEntry(event){
+
+      event.preventDefault();
+
+      perror.textContent = "";
+
+      var name = alldataArr[0].value;
+      var age = alldataArr[1].value;
+      var city = alldataArr[2].value;
+      var mobile = alldataArr[3].value;
+
+      if(isNaN(name)){
+        if(!isNaN(Number(age)) && age != ""){
+          if(isNaN(city)){
+            if(!isNaN(Number(mobile)) && mobile != ""){
+              function Data(name,age,city,mobile){
+                this.name = name;
+                this.age = age;
+                this.city = city;
+                this.mobile = mobile;
+              }
+
+              var stud1 = new Data(name,age,city,mobile);
+
+              //Creating Elements
+              var row = document.createElement("tr");
+              var col1 = document.createElement("td");
+              var col2 = document.createElement("td");
+              var col3 = document.createElement("td");
+              var col4 = document.createElement("td");
+
+              //Inserting Data 
+              col1.textContent = stud1.name;
+              col2.textContent = stud1.age;
+              col3.textContent = stud1.city;
+              col4.textContent = stud1.mobile;
+
+              //Appending
+              row.appendChild(col1);
+              row.appendChild(col2);
+              row.appendChild(col3);
+              row.appendChild(col4);
+
+              table.appendChild(row);
+
+              //Clearing Inputs
+              for(let i = 0; i < alldataArr.length-1; i++){
+                alldataArr[i].value = "";
+              }
+
+            } else{
+              perror.textContent = "Please Enter Correct Mobile Number"
+            }
+          } else{
+              perror.textContent = "Please Enter Correct City"
+            }
+        } else{
+            perror.textContent = "Please Enter Correct Age"
+            }
+        } else{
+        perror.textContent = "Please Enter Correct Name"
+      }
+      // Appending Error
+      form.appendChild(perror);
+    } 
+    btn = document.getElementById('btn');
+    btn.addEventListener('click',dataEntry)
+  </script>
+</body>
+</html>

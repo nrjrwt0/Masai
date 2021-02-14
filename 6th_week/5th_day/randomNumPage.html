@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Number Page</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    button{
+      position: absolute;
+      top: 20px;
+      padding: 10px 20px;
+      margin-bottom: 10px;
+      background-color: teal;
+      color:silver;
+      font-size: 18px;
+      outline: none;
+
+    }
+    #show{
+      position: absolute;
+      top: 80px;
+      padding: 10px;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    #cont{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #img > img{
+      height: 300px;
+      width: 200px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="cont">
+    <button>Generate Random Number</button>
+    <div id="show"></div>
+    <div id="img">
+
+    </div>
+  </div>
+
+
+  <script>
+    var show = document.getElementById('show');
+    var img = document.getElementById('img');
+    var btn = document.querySelector("button");
+
+    function randomNumGen(){
+      return Math.ceil(Math.random()*100)
+    }
+
+    function changePage(){
+      var randomNum = randomNumGen();
+      show.textContent = randomNum;
+      
+      var images = ['https://images.unsplash.com/photo-1561948955-570b270e7c36?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60', 'https://images.unsplash.com/photo-1552053831-71594a27632d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60'];
+
+      //cleaning everything
+      document.body.style.backgroundColor = 'white';
+      img.innerHTML = "";
+
+
+      if(randomNum % 3 == 0 && randomNum % 5 == 0){
+        img.innerHTML = `<img src="${images[0]}"> <img src="${images[1]}">`;
+      } else if (randomNum % 3 == 0 ){
+        img.innerHTML = `<img src="${images[0]}">`;
+      } else if (randomNum % 5 == 0 ){
+        img.innerHTML = `<img src="${images[1]}">`;
+      } else {
+        document.body.style.backgroundColor = 'red';
+      }
+    }
+    btn.addEventListener('click', changePage);
+  </script>
+</body>
+</html>

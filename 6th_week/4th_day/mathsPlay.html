@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maths Play</title>
+</head>
+<body>
+  
+  <input type="text" placeholder="Input">
+  <select id="method">
+    <option value = "1">Math.round()</option>
+    <option value = "2">Math.floor()</option>
+    <option value = "3">Math.ceil()</option>
+  </select>
+  <button >Submit</button>
+  
+
+
+  <script>
+    var btn = document.querySelector("button");
+    var input = document.querySelector("input");
+    
+    function ImplementMethod(){
+      var methodValue = document.querySelector("select").value;
+
+      if(isNaN(Number(input.value))){
+        alert("Please Enter a Valid Number");
+      }
+      else{
+          if(methodValue == 1){
+          input.value = Math.round(input.value);
+        } else if(methodValue == 2){
+          input.value = Math.floor(input.value);
+        } else if(methodValue == 3){
+          input.value = Math.ceil(input.value);
+        }
+      }
+    }
+    btn.addEventListener('click',ImplementMethod);
+  </script>
+</body>
+</html>

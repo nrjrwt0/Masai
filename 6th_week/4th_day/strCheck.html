@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String Check</title>
+</head>
+<body>  
+  <input type="text" id="str">
+  <input type="text" id="subStr">
+  <button>Submit</button>
+
+  <p></p>
+
+  <script>
+    
+    var btn = document.querySelector("button");
+    var p = document.querySelector("p");
+
+    function checkSubStr(){
+      var str = document.getElementById("str").value;
+      var subStr = document.getElementById("subStr").value;
+      var present = 0;
+     
+      var lenOfSubStr = subStr.length;
+      for(var i = 0; i <= str.length - subStr.length; i++){
+        str2 = str.substring(i,subStr.length+i);
+        if(str2 == subStr){
+          present = 1;
+        }
+      }
+
+      if(present == 1){
+        p.textContent = "True";
+      } else{
+        p.textContent = "False";
+      }
+    }
+    btn.addEventListener('click',checkSubStr)
+  </script>
+</body>
+</html>

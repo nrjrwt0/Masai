@@ -1,0 +1,114 @@
+//Memory Component
+
+arr = undefined
+vowel = undefined
+i = undefined
+present = undefined
+j = undefined
+k = undefined
+
+//Code Component
+arr = ["neeraj","masai","school"]
+vowel = "aeiouAEIOU"
+
+i = 0     //neeraj
+present = 0
+
+j = 0      //n
+
+k = 0     //a
+k = 1     //e
+k = 2     //i
+k = 3     //o
+k = 4     //u
+k = 5     //loop end
+
+j = 1      //e
+
+k = 0     //a
+k = 1     //e
+present = 1;
+
+//break
+
+
+present == 1
+//break
+
+
+
+i = 1 //masai
+present= 0
+
+j = 0      //p
+
+k = 0     //a
+k = 1     //e
+k = 2     //i
+k = 3     //o
+k = 4     //u
+k = 5     //loop end
+
+j = 1      //a
+
+k = 0     //a
+present = 1;
+
+//break
+
+
+present == 1
+//break
+
+
+
+i = 2     //schl
+present = 0
+
+j = 0      //s
+
+k = 0     //a
+k = 1     //e
+k = 2     //i
+k = 3     //o
+k = 4     //u
+k = 5     //loop end
+
+j = 1      //c
+
+k = 0     //a
+k = 1     //e
+k = 2     //i
+k = 3     //o
+k = 4     //u
+k = 5     //loop end
+
+j = 2      //h
+
+k = 0     //a
+k = 1     //e
+k = 2     //i
+k = 3     //o
+k = 4     //u
+k = 5     //loop end
+
+j = 3      //l
+
+k = 0     //a
+k = 1     //e
+k = 2     //i
+k = 3     //o
+k = 4     //u
+k = 5     //loop end
+
+j = 4     //loop end
+
+
+
+present == 0
+break
+
+
+
+present == 1..... //True
+else..... //False    

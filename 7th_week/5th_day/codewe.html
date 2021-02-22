@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1></h1>
+  <button onclick="getData()">Get Data</button>
+  <div id="data"></div>
+  <script>
+    // function getData(){
+      // console.log('start')
+      // var xhr = new XMLHttpRequest();
+
+      //  xhr.open('GET','https://reqres.in/api/users?page=2');
+       
+      // xhr.send();
+
+      // xhr.onload= function(){
+      //   console.log(xhr.response)
+      // }
+
+      // xhr.addEventListener('load', function(){
+      //   var received = xhr.response;
+      //   received = JSON.parse(received);
+      //   var arr = received.data;
+
+      //   console.log(xhr.response);
+
+      //   for(let i = 0; i<arr.length;i++){
+      //     var datadiv =  document.getElementById('data');
+      //   var el = document.createElement('P')
+
+      //   el.innerHTML = arr[i].email
+      //   datadiv.appendChild(el);
+      //   }
+      // })
+
+    // }
+    
+    // function getData(){
+    //   var xhr = new XMLHttpRequest();
+
+    //    xhr.open('GET','https://reqres.in/api/users/2');
+       
+    //   xhr.send();
+
+    //   xhr.onload= function(){
+    //     var received = xhr.response
+    //     received = JSON.parse(received);
+    //     console.log(received);
+
+    //     var data = received.data;
+    //     var datadiv =  document.getElementById('data');
+    //     var el = document.createElement('P')
+
+    //     el.innerHTML = data.email
+    //     datadiv.appendChild(el);
+
+    //     // Why it shows [object,object] in browser? But not in console
+        
+    //   }
+    // }
+
+
+    function getData(){
+      var xhr = new XMLHttpRequest();
+
+       xhr.open('POST','https://reqres.in/api/users/2');
+       
+       var body = {
+         name:"Neeraj",
+         job:"sde"
+       }
+       body = JSON.stringify(body)
+      xhr.send(body);
+
+      xhr.onload= function(){
+        console.log(xhr.response);
+
+        // var data = received.data;
+        // var datadiv =  document.getElementById('data');
+        // var el = document.createElement('P')
+
+        // el.innerHTML = data.email
+        // datadiv.appendChild(el);
+
+        // Why it shows [object,object] in browser? But not in console
+        
+      }
+    }
+  </script>
+</body>
+</html>

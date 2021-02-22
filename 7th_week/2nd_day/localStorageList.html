@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Storage List</title>
+</head>
+<body>
+  <input type="text" placeholder="Name">
+  <button>Add</button>
+
+  <h2></h2>
+
+  <script>
+    
+    var btn = document.querySelector('button');
+    var h2 = document.querySelector('h2')
+
+    function showData(){
+      var nameArr = localStorage.getItem('list');
+      if(nameArr === null){
+        h2.textContent = "List is Empty";
+      } else{
+        nameArr = JSON.parse(nameArr);
+        h2.textContent = nameArr
+      }
+    }
+    showData();
+
+    
+
+    btn.addEventListener('click',function(){
+      var name = document.querySelector('input').value;
+
+      var nameArr = localStorage.getItem('list');
+      if(nameArr === null){
+        nameArr = [name];
+      } else{
+        nameArr = JSON.parse(nameArr);
+        nameArr.push(name);
+      }
+
+      //Putting Data in LocalStorage
+      localStorage.setItem('list',JSON.stringify(nameArr));
+
+
+      //Showing Data in Page
+      showData();
+
+      //Removing all data from input
+      document.querySelector('input').value = "";
+    })
+
+    
+
+    // console.log(nameArr);
+
+  </script>
+</body>
+</html>

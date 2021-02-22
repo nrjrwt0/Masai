@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Game</title>
+  <style>
+    body{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #container{
+      display: flex;
+      width: 60%;
+      flex-basis: 48%;
+      justify-content: space-around;
+      align-items: center;
+    }
+    input{
+      display: block;
+      width: 300px;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+    }
+    #btn{
+      width: 342px;
+    }
+    
+    .show{
+      margin: 30px;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Submit this Form before 15 Seconds to Win</h1>
+  <div id="container">
+    <form>
+      <input type="text" placeholder="First Name">
+      <input type="text" placeholder="Last Name">
+      <input type="text" placeholder="Batch Name">
+      <input type="text" placeholder="Mobile Number">
+      <input type="date" placeholder="DOB">
+      <input type="text" placeholder="City">
+      <input type="text" placeholder="PinCode">
+      <input type="submit" id="btn" >
+    </form>
+  
+    <div>
+      <div class="show">
+        <span>First Name:</span> 
+      </div>
+  
+      <div class="show">
+        <span>Last Name:</span> 
+      </div>
+  
+      <div class="show">
+        <span>Batch Name:</span> 
+      </div>
+  
+      <div class="show">
+        <span>Mobile Number:</span> 
+      </div>
+  
+      <div class="show">
+        <span>DOB:</span> 
+      </div>
+  
+      <div class="show">
+        <span>City:</span> 
+      </div>
+  
+      <div class="show">
+        <span>Pincode:</span> 
+      </div>
+    </div>
+  </div>
+  
+
+  <script>
+    var btn = document.getElementById('btn');
+    var inputs = document.querySelectorAll('input');
+    var show = document.querySelectorAll('.show')
+    // var i = 1;
+    var x = setTimeout(function(){
+      var obj = {
+        fname: inputs[0].value,
+        lname: inputs[1].value,
+        bname: inputs[2].value,
+        mobile: inputs[3].value,
+        dob: inputs[4].value,
+        city: inputs[5].value,
+        pin: inputs[6].value
+      }
+      var formData = JSON.stringify(obj)
+      localStorage.setItem('formData', formData);
+      for(let i = 0; i < inputs.length - 1; i++){
+        inputs[i].value = "";
+      }
+      alert('You Lost');
+      // i = 0;
+      
+    },15000);
+
+
+    btn.addEventListener('click',function(e){
+      e.preventDefault();
+
+      for(let i = 0; i < inputs.length - 1; i++){
+        var elem = document.createElement('span');
+        elem.textContent = inputs[i].value;
+        show[i].appendChild(elem);
+      }
+      for(let i = 0; i < inputs.length - 1; i++){
+        inputs[i].value = "";
+      }
+
+      // if(i==0){
+      //   alert('You Lost');
+      // }else{
+      //   alert('Congratulations');
+      // }
+      
+      clearTimeout(x)
+    })
+  </script>
+</body>
+</html>

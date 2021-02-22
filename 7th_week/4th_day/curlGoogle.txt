@@ -1,0 +1,9 @@
+curl google.com
+curl -i google.com
+
+curl https://www.google.com
+curl -i https://www.google.com
+
+
+curl -L google.com
+curl -iL google.com

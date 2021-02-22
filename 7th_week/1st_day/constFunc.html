@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constructor Functions(Prototype)</title>
+  </head>
+  <body>
+    <script>
+
+      // Creating Constructor Function 
+      function Shape(name, sides, sideLength) {
+        this.name = name;
+        this.sides = sides;
+        this.sideLength = sideLength;
+      }
+
+      // Adding Method into it's Prototype
+      Shape.prototype.calcPerimeter = function () {
+        console.log(this.sides * this.sideLength);
+      };
+
+      //Creating Object square using constructor Function
+      var square = new Shape("square", 4, 5);
+      //Calling calcPerimeter for square
+      square.calcPerimeter();
+
+
+      //Creating Object Triangle using constructor Function
+      var triangle = new Shape("triangle",3,3);
+      //Calling calcPerimeter for triangle
+      triangle.calcPerimeter();
+    </script>
+  </body>
+</html>

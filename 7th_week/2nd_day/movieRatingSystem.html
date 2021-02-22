@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Rating System</title>
+  <style>
+    *{
+      font-size: 18px;
+    }
+    #rating{
+      font-size: 18px;
+      width: 140px;
+      height: 30px;
+      margin: 10px;
+      
+    }
+    #comment{
+      font-size: 18px;
+      
+    }
+
+    table td{
+      border: 1px solid black;
+      padding: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ten Favourite Movies</h1>
+
+  <form action="">
+    <select name="movies" >
+      <option value="The Shawshank Redemption">The Shawshank Redemption</option>
+
+      <option value="The Godfather">The Godfather</option>
+
+      <option value="The Dark Knight">The Dark Knight</option>
+
+      <option value="12 Angry Men">12 Angry Men</option>
+
+      <option value="Schindler's List">Schindler's List</option>
+
+      <option value="The Lord of the Rings">The Lord of the Rings</option>
+
+      <option value="Pulp Fiction">Pulp Fiction</option>
+
+      <option value="Inception">Inception</option>
+
+      <option value="Forrest Gump">Forrest Gump</option>
+
+      <option value="Fight Club ">Fight Club </option>
+    </select>
+
+    <br>
+
+    <input type="text" placeholder="Rating Out Of 5" id="rating">
+    <br>
+    <textarea  cols="30" rows="4" id="comment" placeholder="comment"></textarea>
+    <br>
+    <label for="">will rewatch / will not rewatch</label>
+    <input type="checkbox" id="check">
+    <br>
+    <button>Submit</button>
+  </form>
+
+  <h2></h2>
+  <table>
+
+  </table>
+
+
+  <script>
+    var select = document.querySelector('select');
+    var btn = document.querySelector('button');
+    var h2 = document.querySelector('h2');
+    var table = document.querySelector('table');
+    
+    function showData(){
+      
+      table.innerHTML = "";
+      
+      var allmovies = localStorage.getItem('AllMovies');
+      if(allmovies === null){
+        h2.textContent = "List is Empty";
+      } else{
+        movieArr = JSON.parse(allmovies);
+        console.log(movieArr.length)
+
+        for(let i = 0; i < movieArr.length; i++){
+
+          var row = document.createElement('tr');
+          var col1 = document.createElement('td');
+          var col2 = document.createElement('td');
+          var col3 = document.createElement('td');
+          var col4 = document.createElement('td');
+
+
+          col1.textContent = movieArr[i].movie;
+          col2.textContent = movieArr[i].rating;
+          col3.textContent = movieArr[i].comment;
+          col4.textContent = movieArr[i].will_rewatch;
+
+          row.appendChild(col1);
+          row.appendChild(col2);
+          row.appendChild(col3);
+          row.appendChild(col4);
+
+          table.appendChild(row)
+        }
+
+        
+      }
+    
+    }
+    showData();
+
+    btn.addEventListener('click', function(e){
+
+      e.preventDefault();
+
+      var movie = select.value;
+
+      var rating = document.getElementById('rating').value;
+      var comment = document.getElementById('comment').value
+
+      var check = document.getElementById('check').checked;
+      
+      function check() {
+          document.getElementById("yes").checked = true;
+      }
+
+      var obj = {
+        movie : movie,
+        rating : rating,
+        comment : comment,
+        will_rewatch : check
+      }
+
+      //from local storage
+      var allmovies = localStorage.getItem('AllMovies');
+      if(allmovies === null){
+        allmovies = [obj];
+      } else{
+        allmovies = JSON.parse(allmovies);
+        console.log(allmovies);
+        allmovies.push(obj);
+      }
+
+      localStorage.setItem('AllMovies',JSON.stringify(allmovies));
+      showData();
+    })
+  </script>
+</body>
+</html>

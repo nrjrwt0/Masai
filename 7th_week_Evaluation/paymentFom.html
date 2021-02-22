@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Form</title>
+
+    <style>
+      #cont {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #timer {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+      }
+      input {
+        display: block;
+        height: 24px;
+        width: 350px;
+        font-size: 17px;
+        padding: 6px 12px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        outline: none;
+
+      }
+      #btn {
+        width: 380px;
+        height: 36px;
+        background-color: teal;
+        color: white;
+        border: none;
+      }
+      #timer {
+        font-size: 26px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cont">
+      <form>
+        <input type="text" placeholder="Card Number" required />
+        <input type="text" placeholder="CVV" required />
+        <input type="text" placeholder="Full Name" required />
+        <input type="text" placeholder="Address" required />
+        <input type="text" placeholder="OTP" required />
+        <input type="submit" value="Make Payment" id="btn" required />
+      </form>
+
+      <div id="timer">Start</div>
+    </div>
+    <script>
+      window.addEventListener("load", function () {
+        var form = document.querySelector("form");
+        form.addEventListener("submit", checkTime);
+
+        var timer = document.getElementById("timer");
+        
+        var time = 60;
+        var x = setInterval(function () {
+          time--;
+          timer.innerHTML = time;
+        }, 1000);
+
+        setTimeout(function () {
+          clearInterval(x);
+          alert("Sorry, your session is expired");
+
+          //Removing payment Form and Timer after 60 sec 
+          form.style.display = "none";
+          timer.innerHTML = "";
+        }, 60000);
+
+
+        //Fumction is Inside this window.addEventListener("load",function) because I want to access x and timer
+        function checkTime(event) {
+          event.preventDefault();
+          clearInterval(x);
+          alert("Payemt Successfull");
+
+          //Removing payment Form and Timer after 60 sec 
+          form.style.display = "none";
+          timer.innerHTML = "";
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+Slideshow Submitted
+Problem
+use any 5 images of your choice for the slideshow.
+add two buttons 'start' and 'stop'
+on clicking start button slideshow should start. each image should change after 3 seconds.
+on clicking stop, slideshow should stop.
+keep all the images in the center of div.
+Submission Image/Video Instructions
+demo of the application
+
+
+
+
+
+String Prototype Submitted
+Problem
+write a method on String.prototype that will reverse the string you provide.
+suppose, var str='masai', on using str.reverse(), it should output 'iasam'
+first write your own function that can reverse a string. see how you can use loop for that.
+once function is done, see how you can add that function to String.prototype so every string can use it like str.reverse()
+
+
+
+
+
+
+Form Game Submitted
+Problem
+Create a form game where you have to submit a form in 15 seconds.
+if form is submitted in 15 seconds, print a congrats message and show form data on web page.
+if not in 15 seconds, save the form data to localstorage and alert('you lost')
+form should have a minimum of 7 fields
+Submission Image/Video Instructions
+Video demo of the application

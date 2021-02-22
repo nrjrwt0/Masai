@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Management System</title>
+</head>
+<body>
+  <script>
+    //Teacher constructor function
+    function AddTeacher(id,name){
+      this.id = id;
+      this.name = name;
+    }
+    //Student constructor function
+    function AddStudent(id,name){
+      this.id = id;
+      this.name = name;
+    }
+    //Competitions constructor function
+    function AddCompetition(id,name){
+      this.id = id;
+      this.name = name;
+    }
+
+    var teacher1 = new AddTeacher(1,'Nrupul');
+    var teacher2 = new AddTeacher(2,'Aman');
+
+    var student1 = new AddStudent(1,'Neeraj');
+    var student2 = new AddStudent(2,'Rawat');
+
+    var competition1 = new AddCompetition(1,'DsAlgo');
+    var competition2 = new AddCompetition(2,'coding');
+
+    //Bio Fumction For Student and Teachers
+    var bio = function(){
+      console.log("This is "+ this.name + " having id = " + this.id)
+    }
+
+    //Adding bio function as a Prototype 
+    AddTeacher.prototype.bio = bio;
+
+    AddStudent.prototype.bio = bio;
+
+    //Adding Duration Function Inside the Protoype of AddCompetition.
+
+    AddCompetition.prototype.duration = function(time){
+      console.log("This Competition "+ this.name + " having id = " + this.id + " is going to last for " + time + "hrs");
+    }
+
+    //Invoking those Functions
+    teacher1.bio();
+    student1.bio();
+
+    competition1.duration(2)
+  </script>
+</body>
+</html>

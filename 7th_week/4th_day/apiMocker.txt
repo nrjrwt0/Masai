@@ -1,0 +1,35 @@
+METHOD:POST
+https://masai-api-mocker.herokuapp.com/auth/register
+
+raw, in json
+{
+  "name": "neerajrawatnt",
+  "email": "neerajrawatnt@masai.com",
+  "password": "neerajrawatnt",
+  "username": "neerajrawatnt",
+  "mobile": "9292929292",
+  "description": "neeraj rawat" 
+}
+
+METHOD:POST
+https://masai-api-mocker.herokuapp.com/auth/login
+
+{
+  "password": "neerajrawatnt",
+  "username": "neerajrawatnt"
+}
+
+
+
+then we will get a token no
+in my case: d466bc85ca2df8a96d9d0d1157576cb
+
+
+
+METHOD:GET
+and on putting that token in Auth (type: Bearer Token)
+
+we will get all the data which we have submitted at time of registeration.
+
+in my case:
+{"description": "neeraj rawat", "token": "d466bc85ca2df8a96d9d0d1157576cb0", "email": "neerajrawatnt@masai.com", "mobile": "9292929292", "username": "neerajrawatnt", "name": "neerajrawatnt"}

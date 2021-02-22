@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API to UI</title>
+</head>
+<body>
+  <select>
+    <option value="GET">Get</option>
+    <option value="POST">POST</option>
+    <option value="PUT">PUT</option>
+    <option value="DELETE">DELETE</option>
+  </select>
+  <button>Submit</button>
+  <div></div>
+  <table></table>
+  <script>
+    window.addEventListener('load',function(){
+      var btn = document.querySelector('button');
+
+      btn.addEventListener('click',showData)
+    })
+
+    function showData(){
+      var table = document.querySelector('table');
+      var selectVal = document.querySelector('select').value;
+      var div = document.querySelector('div')
+
+      var xhr = new XMLHttpRequest();
+
+      var body = {
+        name:"Neeraj",
+        job:"SDE"
+      }
+      if(selectVal == 'GET'){
+        xhr.open(selectVal,'https://reqres.in/api/users?page=2');
+        xhr.send();
+        xhr.onload= function(){
+          // console.log(xhr.response);
+        var received = xhr.response;
+        var data = JSON.parse(received).data;
+
+        // console.log(data.length);
+
+        for(var i = 0; i< data.length; i++){
+          console.log()
+          var row = document.createElement('tr');
+            var col1 = document.createElement('td');
+            var col2 = document.createElement('td');
+            var col3 = document.createElement('td');
+            var col4 = document.createElement('td');
+
+            col1.textContent = data[i].email;
+            col2.textContent = data[i].first_name;
+            col3.textContent = data[i].last_name;
+            col4.textContent = data[i].avatar;
+
+            row.append(col1,col2,col3,col4);
+
+            table.appendChild(row);
+        }
+
+        }
+        
+
+      } else if(selectVal == 'POST'){
+        xhr.open(selectVal,'https://reqres.in/api/users');
+        xhr.send(body);
+        xhr.onload= function(){
+          console.log(xhr.response);
+          var received = xhr.response;
+          var data = JSON.parse(received);
+          var p1 =document.createElement('p')
+          var p2 =document.createElement('p')
+          p1.innerHTML = data.id
+          p2.innerHTML = data.createdAt
+          div.append(p1,p2);
+          
+        }
+        
+      } else if(selectVal == 'PUT'){
+        xhr.open(selectVal,'https://reqres.in/api/users/2');
+        xhr.send(body);
+        xhr.onload= function(){
+          console.log(xhr.response);
+          var received = xhr.response;
+          var data = JSON.parse(received);
+          var p1 =document.createElement('p')
+          p1.innerHTML = data.updatedAt
+          div.append(p1);
+        }
+      } else{
+        xhr.open(selectVal,'https://reqres.in/api/users/2');
+        xhr.send();
+        xhr.onload= function(){
+          console.log(xhr.status);
+          var received = xhr.status;  
+          div.innerHTML = received 
+        }
+      }
+    }
+  </script>
+</body>
+</html>

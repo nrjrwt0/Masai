@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reqres</title>
+</head>
+<body>
+  
+  <button id="get">Get</button>
+  <button id="post">Post</button>
+  <button id="put">Put</button>
+  <button id="del">Delete</button>
+
+  <script>
+    window.addEventListener('load',function(){
+
+      var get = document.getElementById('get');
+      var post = document.getElementById('post');
+      var put = document.getElementById('put');
+      var del = document.getElementById('del');
+
+      get.addEventListener('click',getData);
+      post.addEventListener('click',postData);
+      put.addEventListener('click',putData);
+      del.addEventListener('click',delData);
+    })
+
+    function getData(){
+      //creating xhr object
+      var xhr = new XMLHttpRequest();
+
+      //opening our request by telling method name and url of API
+      xhr.open('GET','https://reqres.in/api/users?page=2');
+
+      //Sending our request
+      xhr.send();
+
+      //On load we are getting response
+      xhr.onload= function(){
+        console.log(xhr.response);
+      }
+    }
+
+    function postData(){
+      //creating xhr object
+      var xhr = new XMLHttpRequest();
+
+      //opening our request by telling method name and url of API
+      xhr.open('POST','https://reqres.in/api/users');
+
+      //creating body to send data
+      var body = {
+         name:"Neeraj",
+         job:"SDE"
+      }
+
+      //Sending our request with body
+      xhr.send(body);
+
+      //On load we are getting response
+      xhr.onload= function(){
+        console.log(xhr.response);
+      }
+    }
+
+    function putData(){
+      //creating xhr object
+      var xhr = new XMLHttpRequest();
+
+      //opening our request by telling method name and url of API
+      xhr.open('PUT','https://reqres.in/api/users/2');
+
+      //creating body to update data
+      var body = [{
+         name:"Neeraj",
+         job:"SDE-1"
+      }]
+
+      //Sending our request with body
+      xhr.send(body);
+
+      //On load we are getting response
+      xhr.onload= function(){
+        console.log(xhr.response);
+      }
+    }
+
+    function delData(){
+      //creating xhr object
+      var xhr = new XMLHttpRequest();
+      
+      //opening our request by telling method name and url of API 
+      xhr.open('DELETE','https://reqres.in/api/users/2');
+
+      //Sending our request
+      xhr.send();
+
+      //On load we are getting response
+      xhr.onload= function(){
+        console.log(xhr.response);
+      }
+    }
+
+  </script>
+</body>
+</html>

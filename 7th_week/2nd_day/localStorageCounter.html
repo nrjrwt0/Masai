@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Storage Counter</title>
+</head>
+<body>
+  <h1>0</h1>
+  <button id="inc">Increase</button>
+  <button id="dec">Decrease</button>
+
+  <script>
+    var inc = document.getElementById('inc');
+    var dec = document.getElementById('dec');
+    var h1 =document.querySelector('h1');
+  
+
+    var counter = localStorage.getItem('counter'); 
+
+    if(counter == null){
+      h1.textContent = 'counter is null';
+      counter = 0;
+    } else{
+      h1.textContent = counter;
+    }
+    inc.addEventListener('click',function(){
+      counter++;
+      show();
+    })
+
+    dec.addEventListener('click',function(){
+      counter--;
+      show();
+    })
+
+    function show(){
+      localStorage.setItem('counter',counter);
+      var counterValue = localStorage.getItem('counter')
+      h1.textContent = counterValue;
+    }
+    
+  </script>
+</body>
+</html>

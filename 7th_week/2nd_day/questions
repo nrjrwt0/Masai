@@ -1,0 +1,40 @@
+Local Storage Counter Submitted
+Problem
+create 2 buttons increaseand decrease and one h1
+on clicking the increase button the value of the counter should increase by 1
+on clicking the decrease button the value of the counter should decrease by 1
+show the current counter value in the h1 tag
+the data should be saved in the localStorage with the key called counter
+on refresh the counter should show the data which was already there
+the page should not throw an error when refreshed even if data in localstorage is empty, instead inform the counter is null (show this message on the dom)
+Submission Image/Video Instructions
+video demo of the application
+
+
+
+
+
+Local Storage List Submitted
+Problem
+create an inputbox and an add button
+you should take name
+on add, take the input from the input box
+show the list of names in the DOM to the user
+the data should be saved in the localStorage as an array
+on refresh the list should show the data which was already there
+the page should not throw an error when refreshed even if data in localstorage is empty, instead inform the list is empty (show this messsage on the dom)
+Submission Image/Video Instructions
+Video demo of the application
+
+
+
+
+
+Movie Rating System Submitted
+Problem
+create a dropdown with list of at least 10 movies of your choice.
+create 3 input boxes. accept rating out of 5, accept a text feedback and checkbox with two options ( will rewatch, will not rewatch )
+get all the above formdata and store it in the localstorage.
+show the localstorage data on frontend. Would love to see if you use table to showcase ratings and other accepted properties.
+Submission Image/Video Instructions
+Video demo of the application

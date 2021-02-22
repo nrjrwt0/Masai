@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slideshow</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #container{
+      display: flex;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #buttons button{
+      margin:0px 40px 40px;
+      padding:14px 34px;
+      font-size: 18px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      color: white;
+      background-color: teal;
+      cursor: pointer;
+    }
+    img{
+      width: 500px;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="buttons">
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+    </div>
+    <div>
+      <div class="images-cont">
+        <img src="https://images.unsplash.com/photo-1587502537745-84b86da1204f?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="">
+      </div>
+    </div>
+  </div>
+  <script>
+
+    var start = document.getElementById('start');
+    var stop = document.getElementById('stop');
+    var imagesCont =document.querySelector('.images-cont');
+    var img = document.querySelector('img');
+
+    var imgArr = ['https://images.unsplash.com/photo-1587502537745-84b86da1204f?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80','https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1052&q=80', 'https://images.unsplash.com/photo-1414609245224-afa02bfb3fda?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1235&q=80', 'https://images.unsplash.com/photo-1515966097209-ec48f3216288?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80','https://images.unsplash.com/photo-1565275935849-deebc797c949?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1049&q=80'];
+
+    
+
+    start.addEventListener('click',function(){
+      var i = 1;
+      var slide = setInterval(function(){
+        img.setAttribute('src',imgArr[i]);
+        i++;
+        console.log(i);
+        if(i == 5){
+          i = 0;
+        }
+      },3000);
+
+      stop.addEventListener('click',function(){
+        clearInterval(slide);
+      })
+    });
+
+    
+  </script>
+</body>
+</html>

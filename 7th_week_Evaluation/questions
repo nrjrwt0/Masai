@@ -1,0 +1,71 @@
+Create a simple simulation for creation of life. Submitted
+Problem
+Create separate constructor functions for plants, animal and human.
+
+Add relevant properties like ‘this.canspeak=true’ for humans. Add more properties of your choice. You can either pass them as parameters or hard code them.
+
+Create multiple objects of plant, animal, and human using new keyword.
+
+These objects should be created after a certain time period. See which Browser API functionality you can use for that.
+
+Push the objects in their respective arrays. Like new plant object will get pushed to plants array.
+
+Optional: Try removing the objects after a certain time interval as well. How many to remove is up to you.
+
+console.log plants, animals, and humans array whenever you are pushing respective objects to them
+
+This is only a Js problem. Create a single .js file linked to index.html that will print its output to the console when loaded into the brower.
+Submission Image/Video Instructions
+Code file and demo of the application.
+
+
+
+
+
+
+
+
+
+
+Create a payment form with time out feature. Submitted
+Problem
+Create a payment form with fields like card number, CVV, full name, address, and OTP. Create a ‘make payment’ button.
+
+On the top right corner show a timer of 1 minute.
+
+User should make the payment in under 1 minute. If they take more than 1 minute, the form should be removed and alert(‘Sorry, your session is expired’)
+
+Timer should start from 60 seconds and end at 0 seconds. You will have to update the value every second, see where you should write the code for that, and the browser API feature you should use.
+
+Submission Image/Video Instructions
+Code file and demo of the application.
+
+
+
+
+
+
+
+Reqres and XHR Submitted
+Problem
+For this example, you will have to use reqres API, XHR, and localstorage.
+
+Create two pages. One for register and one for login.
+
+In register.html, create a form to accept email and password.
+
+Make a post request to reqres API by sending email and password as the body.
+
+Make sure you are sending it as a JSON.
+
+On successful response, you will get a token key. Store this token to localstorage, retrieve it and Show the token on the webpage also.
+
+Once you get the key, go to login.html
+
+Now, again on login.html, create a form to accept email and password. Send it in the proper body (JSON) and on the successful response, Store this token to localstorage, retrieve it and Show the token on the webpage also.
+
+Note: Username and password must be what reqres API has shown. Go to reqres.in and see the register and login requests. There you will find which username and password to send so that you can get the token key in the response.
+
+Make sure if the server can understand your data is JSON or not
+
+xhr.setRequestHeader('Content-Type', 'application/json;charset=utf-8'); //additional information-good practise

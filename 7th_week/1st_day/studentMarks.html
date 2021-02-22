@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Marks</title>
+</head>
+<body>
+    
+  <script>
+    function Student(marksobtained,marksoutof){
+      this.marksobtained = marksobtained;
+      this.marksoutof = marksoutof;
+    }
+
+    var calculatePercentage = function(){
+      console.log((this.marksobtained/this.marksoutof)*100);
+    }
+
+    var arr = [
+        {
+          marksObtained: 95,
+          marksOutof: 100,
+        },
+        {
+          marksObtained: 90,
+          marksOutof: 200,
+        },
+        {
+          marksObtained: 85,
+          marksOutof: 100,
+        },
+        {
+          marksObtained: 80,
+          marksOutof: 100,
+        },
+        {
+          marksObtained: 75,
+          marksOutof: 100,
+        },
+        {
+          marksObtained: 70,
+          marksOutof: 100,
+        },
+        {
+          marksObtained: 65,
+          marksOutof: 100,
+        },
+        {
+          marksObtained: 60,
+          marksOutof: 100,
+        },
+        {
+          marksObtained: 50,
+          marksOutof: 100,
+        },
+        {
+          marksObtained: 50,
+          marksOutof: 100,
+        },
+      ]
+ 
+      var stud = [];
+      for(var i = 0; i < arr.length; i++){
+        stud.push(new Student(arr[i].marksObtained,arr[i].marksOutof));
+
+        //Using Call Method
+        calculatePercentage.call(stud[i]);
+
+        // Using Bind Method
+        var newFunc = calculatePercentage.bind(stud[i]);
+        newFunc();
+      }
+  
+
+
+    // // Another Method
+
+     // for(var i = 0; i < arr.length; i++){
+      //   var stud1 = new Student(arr[i].marksObtained,arr[i].marksOutof);
+
+      //   //Using Call Method
+      //   calculatePercentage.call(stud1);
+
+      //   // Using Bind Method
+      //   var newFunc = calculatePercentage.bind(stud1);
+      //   newFunc();
+      // }
+
+
+    // // Without loop
+
+    // var stud1 = new Student(90,100);
+    // var stud2 = new Student(80,100);
+    // var stud3 = new Student(70,100);
+    // var stud4 = new Student(60,100);
+    // var stud5 = new Student(50,100);
+    // var stud6 = new Student(40,100);
+    // var stud7 = new Student(30,100);
+    // var stud8 = new Student(96,100);
+    // var stud9 = new Student(92,100);
+    // var stud10 = new Student(97,100);
+
+    // var arr = [stud1,stud2,stud3,stud4,stud5,stud6,stud7,stud8,stud9,stud10];
+
+    // for(var i = 0; i < 10; i++){
+    //   //Call
+    //   calculatePercentage.call(arr[i]);
+
+    //   //Bind
+    //   var newFunc = calculatePercentage.bind(arr[i]);
+    //     newFunc();
+    // }
+    
+   
+  </script>
+</body>
+</html>

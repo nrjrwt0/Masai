@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Data</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+    }
+    input{
+      width: 300px;
+      height: 50px;
+      font-size: 18px;
+      text-align: center;
+    }
+    button{
+      padding: 10px 20px;
+      max-height: 50px;
+      font-size: 18px;
+      background-color: turquoise;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+    }
+    #cont{
+      text-align: center;
+      /* border: 1px solid black; */
+    }
+    table {
+      margin-top: 50px;
+    }
+    table td{
+      border: 1px solid black;
+      font-size: 20px;
+      padding:8px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="cont">
+    <input type="text" placeholder="Enter Id">
+    <button id="show">Show Data</button>
+    <button id="abort">Abort Request</button>
+
+    <table>
+    </table>
+  </div>
+  
+
+ 
+
+  <script>
+    window.addEventListener('click',function(){
+
+      var showBtn = document.getElementById('show');
+      showBtn.addEventListener('click',showData);
+
+    })
+
+    function showData(){
+      
+
+
+      var x = setTimeout(function(){
+        var id = document.querySelector('input').value;
+        var table = document.querySelector('table');
+
+        if(!isNaN(id)){
+
+          var xhr = new XMLHttpRequest();
+          
+
+          xhr.open('GET','https://reqres.in/api/users/'+id);
+
+          xhr.send();
+
+          xhr.onload = function(){
+            var received = xhr.response;
+            var data = JSON.parse(received).data;
+            console.log(data);
+
+            var row = document.createElement('tr');
+            var col1 = document.createElement('td');
+            var col2 = document.createElement('td');
+            var col3 = document.createElement('td');
+            var col4 = document.createElement('td');
+
+            col1.textContent = data.email;
+            col2.textContent = data.first_name;
+            col3.textContent = data.last_name;
+            col4.textContent = data.avatar;
+
+            row.append(col1,col2,col3,col4);
+
+            table.appendChild(row);
+
+            document.querySelector('input').value = "";
+          }
+        }
+      },4000);
+
+
+      //Aboting Data
+      var abortBtn = document.getElementById('abort');
+      abortBtn.addEventListener('click',abortReq);
+
+      function abortReq(){
+      clearTimeout(x)
+      document.querySelector('input').value = "";
+    }
+    }
+
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  overflow-wrap: break-word;
+}
+button{
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 8px 10px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+button > a{
+  text-decoration: none;
+  color: white;
+}
+
+#show{
+  max-width: 94%;
+  margin: 20px auto;
+}
+
+input{
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 8px 10px;
+  outline: none;
+  font-size: 16px;
+}

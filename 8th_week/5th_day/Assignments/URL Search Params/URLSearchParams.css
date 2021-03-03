@@ -1,0 +1,42 @@
+p{
+  font-size: 24px;
+  font-weight: bold;
+}
+button{
+  padding: 8px 12px;
+  font-size: 18px;
+  border: none;
+  color: white;
+  margin: 20px 20px;
+}
+
+button:first-child{
+  background-color: teal;
+}
+button:nth-child(2){
+  background-color: tomato;
+}
+button:nth-child(3){
+  background-color: yellowgreen;
+}
+button:nth-child(4){
+  background-color: darkgoldenrod;
+}
+button:nth-child(5){
+  background-color: salmon;
+}
+button:nth-child(6){
+  background-color: darkorchid;
+}
+button:nth-child(7){
+  background-color: maroon;
+}
+button:nth-child(8){
+  background-color: sandybrown;
+}
+button:nth-child(9){
+  background-color: violet;
+}
+button:nth-child(10){
+  background-color: khaki;
+}

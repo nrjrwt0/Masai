@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Async API</title>
+
+  <link rel="stylesheet" href="AsyncAPI.css">
+</head>
+<body>
+  <div id="cont">
+    <div id="getBtns">
+      <button onclick="getPosts()">Get Posts</button>
+      <button onclick="getAlbums()">Get Albums</button>
+      <button onclick="getTodos()">Get Todos</button>
+      <button onclick="getUsers()">Get Users</button>
+    </div>
+
+    <div id="showBtns">
+      <button onclick="showPosts()">Show Posts</button>
+      <button value="albums" onclick="showAlbums()">Show Albums</button>
+      <button value="todos" onclick="showTodos()">Show Todos</button>
+      <button value="users" onclick="showUsers()">Show Users</button>
+    </div>
+  </div>
+
+  <div id="showData">
+
+  </div>
+
+  <script src="AsyncAPI.js"></script>
+</body>
+</html>

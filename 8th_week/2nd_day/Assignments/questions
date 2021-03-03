@@ -1,0 +1,43 @@
+Fetch
+User checked in: 01 Hrs : 58 Mins ago
+JSON Placeholder Submitted
+Problem
+use http://jsonplaceholder.typicode.com/ as an API
+create 4 buttons namely get posts, get todos, get albums, get users
+on clicking the button make the respective get request
+on clicking get users, you should make a GET request to fetch the users.
+use fetch to make request
+Submission Image/Video Instructions
+Demo of the application
+
+
+
+
+
+
+
+
+Masai Registration Submitted
+Problem
+follow the steps as discussed in the class
+create registration and login forms.
+register a user using post request
+user should be able to log in
+the data you get after loggin in should be stored in localstorage
+you will have to make two post requests and one get request basically.
+API Link- https://masai-api-mocker.herokuapp.com/
+Documentation - https://github.com/masai-school/api-mocker/wiki/Authentication-API
+Submission Image/Video Instructions
+Video Demo of the application
+
+
+
+
+
+XHR Difference Submitted
+Problem
+Make any GET request using reqres.in API
+Make the same request using XHR
+Comment the difference in code itself
+Submission Image/Video Instructions
+Video Explaining the difference

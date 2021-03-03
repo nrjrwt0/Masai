@@ -1,0 +1,18 @@
+button{
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 8px 10px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+select{
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 8px 10px;
+  outline: none;
+  font-size: 16px;
+}

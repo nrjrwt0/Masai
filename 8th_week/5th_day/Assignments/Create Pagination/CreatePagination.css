@@ -1,0 +1,30 @@
+#cont,#divBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  text-align: center;
+}
+#cont > button{
+  background-color: tomato;
+}
+button{
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 7px 20px;
+  background-color: teal;
+  color: white;
+  border: none;
+  margin-top: 20px;
+}
+#items{
+  font-size: 20px;
+  padding: 7px 20px;
+  margin-top: 20px;
+}
+#show{
+  font-size: 20px;
+  margin: 30px auto 0px;
+  width: 90%;
+}

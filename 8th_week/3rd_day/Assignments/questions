@@ -1,0 +1,46 @@
+Promises, async await
+User checked in: 11 Hrs : 18 Mins ago
+Ordering System Submitted
+Problem
+Have you seen the McDonald's order notification display. Whenever your order is ready, it is displayed on the screen with your order number.
+Create a button called 'Order Food'
+When user clicks on order food, create a promise that will resolve after 5 seconds.
+Once the promise is resolved, show the image of the food in center and show order id on top right corner.
+create a navbar on top, showing name and details of your restaurant. refer to any restaurant website for that.
+Github location
+Submission Image/Video Instructions
+Demo of the application
+
+
+
+
+
+
+Promises, async await
+User checked in: 11 Hrs : 18 Mins ago
+Create a happy birthday Service Submitted
+Problem
+Create 4 buttons with your friend's names. like 'wish Sarang', 'wish Nrupul', 'wish Albert' etc.
+For each button clicked, a promise must be created which will resolve depending of their current age-20.
+If you click on, 'wish Sarang' and sarang's current age is 30, their should be congratulations message and image displayed after 10 seconds ( 30-20)
+Github location
+Submission Image/Video Instructions
+Video demo of the application
+
+
+
+
+
+Promises, async await
+User checked in: 11 Hrs : 18 Mins ago
+Async API Submitted
+Problem
+go to http://jsonplaceholder.typicode.com/
+Use async - await to make GET request to at least 4 endpoints of aboveAPI
+create buttons like, 'get todos', 'get albums' etc
+all the data must go through localstorage first
+now, create 4 more buttons like 'show todos', 'show albums' etc
+on clicking those buttons, retrieve the data from localstorage and show it on webpage.
+Github Code location
+Submission Image/Video Instructions
+Demo of the application

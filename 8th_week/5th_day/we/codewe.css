@@ -1,0 +1,23 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+button{
+  padding: 2px 14px;
+  font-size: 17px;
+  background-color: teal;
+  color: white;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+select{
+  padding: 2px 10px;
+  margin-left: 20px;
+}
+#show{
+  font-size: 17px;
+  width: 90%;
+  margin:10px auto;
+}

@@ -1,0 +1,437 @@
+ Simple Pattern Drawing
+Description
+
+You have to write code that draws a Snake for you according to the following rules:
+
+A snake is a pattern on a n by m table. Denote c-th cell of r-th row as (r, c). The tail of the snake is located at (1, 1), then it's body extends to (1, m), then goes down 2 rows to (3, m), then goes left to (3, 1) and so on.
+
+The empty cells should be represented as dot characters ('.') and the snake cells should be filled with number signs ('#').
+
+Consider sample tests in order to understand the snake pattern.
+
+
+Input
+Input Format
+
+The only line contains two integers: n and m.
+
+n is an odd number.
+
+
+
+Constraints
+
+3 ≤ n,m ≤ 50
+
+
+Output
+Output Format
+
+Output n lines. Each line should contain a string consisting of m characters. Do not output spaces.
+
+
+Sample Input 1 
+
+3 3
+Sample Output 1
+
+###
+..#
+###
+Sample Input 2 
+
+5 3
+Sample Output 2
+
+###
+..#
+###
+#..
+###
+Sample Input 3 
+
+9 9
+Sample Output 3
+
+#########
+........#
+#########
+#........
+#########
+........#
+#########
+#........
+#########
+
+
+
+
+
+
+Consecutive Even
+Description
+
+Given an array A with n integers, find out whether if there exist three consecutive elements in the given array which are even.
+
+Print "Yes" if exists, else "No".
+
+
+Input
+The first line of the input contains one integer t (1 ≤ t ≤ 100) — the number of test cases. Then t test cases follow.
+
+The first line of each test case contains a single integer n (3 ≤ n ≤ 1000) — the number of elements in the array A.
+
+The second line of each test case contains n integers (1 ≤ Ai ≤1000).
+
+
+Output
+For each test case, print the answer.
+
+
+Sample Input 1 
+
+2
+3
+1 2 3
+5
+1 2 4 6 8
+Sample Output 1
+
+No
+Yes
+
+
+
+ 
+Human Readable Time
+Description
+
+Given number of minutes, convert it into human readable form.
+
+Example:
+
+130 becomes 2hrs 10minutes
+
+110 becomes 1hr 50minutes
+
+120 becomes 2hrs 00minutes
+
+Note the exact format of output
+
+If number of hour is 1 then output would be hr and not hrs
+
+In case there are exact number of hours (like 120 minutes), keep minutes as 00
+
+Keep minutes always in plural form even if it is 1 (singular)
+
+
+Input
+Input Format
+
+First and only line of input contains a number which is total time in minutes that needs to be converted into human readable form.
+
+Constraints
+
+65<= input < 10000 minutes
+
+
+Output
+Output Format
+
+Output the string in correct format as per following rules:
+
+1. If number of hour is 1 then output would be hr and not hrs
+
+2. In case there are exact number of hours (like 120 minutes), keep minutes as 00
+
+3. Keep minutes always in plural form even if it is 1 (singular)
+
+4. There is exactly one space between hours reading and minutes reading
+
+
+Sample Input 1 
+
+135
+Sample Output 1
+
+2hrs 15mins
+
+
+
+
+
+
+Count Possible Pairs
+Description
+
+You are given a system of equations:
+
+x^2 + y = n
+
+y^2 + x = m
+
+You have to count, how many there are pairs of integers (x, y) (0 ≤ x, y) which satisfy the system.
+
+
+Input
+Input Format :
+
+A single line contains two integers n, m
+
+Constraints :
+
+1 ≤ n, m ≤ 1000
+
+
+Output
+On a single line print the count
+
+
+Sample Input 1 
+
+9 3
+Sample Output 1
+
+1
+Hint
+
+Output Explanation :
+
+In the first sample the suitable pair is integers (3, 0)
+
+
+
+
+
+
+
+
+
+Result or Tie - Tic Tac Toe
+Description
+
+You are given a 3*3 matrix (2-dimensional array) that represents the final situation of a Tic Tac Toe.
+
+Your task is to write a program that finds out the winner in case the match ended in a win. If the winner is 'x', print 'x'(without quotes).
+
+If the winner is 'o', print 'o' (without quotes)
+
+In case the match ended in a tie, print "Tie" (without quotes)
+
+
+Input
+InputFormat
+
+The input contains 3 lines where each line has 3 space separated characters which represent the final status of tic tac toe
+
+Constraints
+
+The input contains either of the 2 alphabets: 'x' and 'o'
+
+
+Output
+Print Tie/x/o depending on the end result of the game.
+
+
+Sample Input 1 
+
+x o x
+o x x
+o o o
+Sample Output 1
+
+o`
+
+
+
+
+
+
+
+
+
+Conditional Matrix Sum
+Description
+
+You are given a matrix(2 dimensional array) of integers of n rows and m columns. Your task is to write a program that calculates sum of all such integers present in the matrix which are divisible by 3.
+
+
+Input
+Input Format
+
+First line contains n and m.
+
+In the next n lines, there are m integers in each line which makes up elements of matrix.
+
+Constraints
+
+n<100
+
+m<100
+
+
+Output
+Output Format
+
+Output one number which is the sum of all such integers which are divisible by 3.
+
+
+Sample Input 1 
+
+2 3
+3 1 8
+2 6 0
+Sample Output 1
+
+9
+Hint
+
+The given 2 dimensional array has 2 rows and 3 columns.
+
+
+
+
+
+
+
+
+
+Transpose the Matrix
+Description
+
+The transpose of a matrix is an operator which flips a matrix over its diagonal, that is it switches the row and column of the matrix by producing another matrix.
+
+See sample test case for better understanding
+
+So, given an array of n rows and m columns, generate the transpose of the matrix.
+
+
+Input
+Input Format:
+
+First line contains two integers n and m
+
+Next n lines contain m integers which represents each row of 2d array
+
+Constraints:
+
+n,m <= 500
+
+
+Output
+Print the transposed array
+
+
+Sample Input 1 
+
+5 4
+0 0 0 0
+1 1 1 1
+2 2 2 2
+3 3 3 3
+4 4 4 4
+Sample Output 1
+
+0 1 2 3 4 
+0 1 2 3 4 
+0 1 2 3 4 
+0 1 2 3 4 
+
+
+
+
+
+
+
+
+
+
+2D Array and Sum
+Description
+
+You are given an array of n rows and m columns which contains positive integers and sum s
+
+You need to find occurrences of the sum of three consecutive numbers (i.e x,y, and z ) whose sum is equal to s appear horizontally, vertically and diagonally in the given matrix.
+
+Image
+
+
+Input
+Input Format
+
+First line: Three integers n, m and s, where n denotes the number of rows, m denotes the number of columns in the matrix and s is the sum.
+
+Next n lines: Each line contains m characters which contain positive integers only.
+
+Constraints
+
+1 <= n,m < 10
+
+1 <= s <= 50
+
+
+Output
+Print the number of times the sum s appear in the matrix.
+
+
+Sample Input 1 
+
+3 3 6
+3 2 1
+2 2 2
+1 5 1
+Sample Output 1
+
+4
+Hint
+
+Sample 1 Explanation
+
+here s is 6 presents 4 times( 2 Horizontal + 1 Vertical + 1 Diagonal)
+
+
+
+
+
+
+
+
+2D Array and Product
+Description
+
+You are given an array of n rows, m columns which contains positive integers and  product P
+
+You need to find occurrences of the product of three consecutive numbers (i.e x,y, and z )whose product is equal to given P appear horizontally, vertically and diagonally in the given matrix.
+
+1592215892-cf2597c7eb-S2DSumcreenshot.png
+
+
+Input
+Input Format
+
+First line: Three integers n, m and P where n denotes the number of rows, m denotes the number of columns in the matrix and P is the product.
+
+Next line: Each line contains m characters which contain positive integers only.
+
+Constraints
+
+1< = n,m < 10
+
+1<= P <=100
+
+
+
+
+Output
+Print the number of times the product p appears in the matrix
+
+
+Sample Input 1 
+
+3 3 6
+3 2 1
+2 2 2
+1 5 1
+Sample Output 1
+
+3

@@ -1,0 +1,35 @@
+#cont{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+input{
+  padding: 4px 12px;
+  font-size: 20px;
+  outline: none;
+  margin-top: 20px;
+}
+button{
+  margin-left: 10px;
+  font-size: 20px;
+  padding: 7px 20px;
+  background-color: teal;
+  color: white;
+  border: none;
+  margin-top: 20px;
+}
+
+#show-div{
+  width: 60%;
+  margin: auto;
+}
+
+#hello{
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+p{
+  font-size: 20px;
+}
